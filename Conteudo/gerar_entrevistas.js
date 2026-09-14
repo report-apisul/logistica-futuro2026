@@ -503,7 +503,7 @@ ${FOOTER}
 }
 
 const ORDER = [
-  'multisat', 'apisul-corretora-seguros', 'apisul-produtos-digitais-ia', 'sighra',
+  'multisat', 'apisul-corretora-seguros', 'sighra', 'apisul-produtos-digitais-ia',
   'carga-online', 'trucks-control', 'omnilink', 'jomed', 'x-global',
   't4s-tecnologia', 'netfleet-driver-serie-a', 'grupo-tracker', 'ita-frio',
 ];
