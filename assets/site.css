@@ -268,3 +268,44 @@ a:focus-visible, button:focus-visible, input:focus-visible, [tabindex]:focus-vis
   outline: 2px solid var(--teal); outline-offset: 3px; border-radius: 1px;
 }
 .site-nav a:focus-visible, .item a.lk:focus-visible, .sp:focus-visible, .site-footer a:focus-visible { outline-color: var(--cyan); }
+
+/* ================= revelação de texto ao rolar =================
+   Títulos entram palavra a palavra (máscara), como tinta sendo revelada;
+   o resto do conteúdo avança de leve com fade. As classes .rv só existem
+   depois que assets/reveal.js roda — o HTML estático nunca começa com
+   opacity:0 por padrão, então falha de JS não esconde conteúdo. */
+.rv {
+  opacity: 0; transform: translateY(18px);
+  transition: opacity .6s cubic-bezier(.16,1,.3,1), transform .6s cubic-bezier(.16,1,.3,1);
+  will-change: opacity, transform;
+}
+.rv.rv-in { opacity: 1; transform: translateY(0); will-change: auto; }
+
+[data-rv-words] { overflow: visible; }
+[data-rv-words].rv-ready .rv-word {
+  display: inline-block; overflow: hidden; vertical-align: top;
+  padding: .06em .05em .1em; margin: -.06em -.05em -.1em;
+}
+[data-rv-words].rv-ready .rv-word-inner {
+  display: inline-block; transform: translateY(112%);
+  transition: transform .74s cubic-bezier(.16,1,.3,1);
+}
+[data-rv-words].rv-in .rv-word-inner { transform: translateY(0); }
+[data-rv-words].rv-settled .rv-word { overflow: visible; }
+
+@media (prefers-reduced-motion: reduce) {
+  .rv, [data-rv-words] .rv-word-inner { opacity: 1 !important; transform: none !important; transition: none !important; }
+}
+
+/* ================= micro-interações extra ================= */
+.stat { transition: background .3s ease, transform .3s cubic-bezier(.16,1,.3,1); }
+.stat:hover { background: #EDE8DE; transform: translateY(-2px); }
+.fh-card { transition: background .3s ease, transform .3s cubic-bezier(.16,1,.3,1); }
+.fh-card:hover { background: #EDE8DE; transform: translateY(-2px); }
+.raiox dl > div { transition: padding-left .25s ease, border-color .25s ease; }
+.raiox dl > div:hover { padding-left: 10px; border-color: var(--teal); }
+.diagram .flow-step { transition: transform .3s cubic-bezier(.16,1,.3,1); }
+.diagram .flow-step:hover { transform: translateY(-3px); }
+.diagram .flow-step:hover .ix { color: var(--cyan); }
+.vitem .frame { transition: border-color .3s ease; }
+.vitem:hover .frame { border-color: var(--cyan); }

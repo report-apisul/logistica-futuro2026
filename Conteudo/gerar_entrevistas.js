@@ -454,6 +454,7 @@ ${NAV}
 
 ${FOOTER}
 <script src="../assets/nav-scroll.js"></script>
+<script src="../assets/reveal.js"></script>
 </body>
 </html>
 `;
@@ -521,6 +522,7 @@ ${items}
 
 ${FOOTER}
 <script src="../assets/nav-scroll.js"></script>
+<script src="../assets/reveal.js"></script>
 </body>
 </html>
 `;
