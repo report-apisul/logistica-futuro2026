@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-14T19:15:00Z",
+  "title": "Design System: Logística do Futuro",
+  "extensions": {
+    "colorMeta": {
+      "signal-cyan": { "role": "primary", "displayName": "Signal Cyan", "canonical": "#4FD1E8", "tonalRamp": ["#0B3A40", "#124F57", "#19646E", "#227E88", "#3AA6B2", "#4FD1E8", "#7FE0F0", "#B8EEF7"] },
+      "teal-link": { "role": "secondary", "displayName": "Teal Link", "canonical": "#1F6F7D", "tonalRamp": ["#0A2C32", "#123F47", "#19525C", "#1F6F7D", "#2C8D9C", "#4CACBB", "#7FC6D2", "#B4E1E8"] },
+      "hero-purple": { "role": "tertiary", "displayName": "Hero Purple", "canonical": "#7c5cff", "tonalRamp": ["#241A66", "#332491", "#4530C2", "#5A3FE6", "#7c5cff", "#9B82FF", "#BFAEFF", "#E2D9FF"] },
+      "navy-ground": { "role": "neutral", "displayName": "Navy Ground", "canonical": "#101826", "tonalRamp": ["#050810", "#0A101B", "#101826", "#16202f", "#22344C", "#3A5170", "#5C7594", "#93A3B8"] },
+      "paper-cream": { "role": "neutral", "displayName": "Paper Cream", "canonical": "#F2EEE6", "tonalRamp": ["#DCD6C9", "#E6E1D7", "#EDE8DE", "#F2EEE6", "#F6F3EC", "#FAF8F3", "#FCFBF8", "#FFFFFF"] },
+      "ink": { "role": "neutral", "displayName": "Ink", "canonical": "#14161A", "tonalRamp": ["#000000", "#0A0B0D", "#14161A", "#2A2E36", "#4A4842", "#6B6559", "#93A3B8", "#DCD6C9"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Page-head h1 on every interior page (palestra title, 'Entrevistas', 'Vídeos')." },
+      "headline": { "displayName": "Headline", "purpose": "In-article h2 section breaks inside long-form pieces." },
+      "title": { "displayName": "Title", "purpose": "Interview-list item titles and card headlines." },
+      "body": { "displayName": "Body", "purpose": "Serif reading column for interview bodies and palestra prose." },
+      "label": { "displayName": "Label", "purpose": "Nav links, item numbers, kickers, Raio-X field labels, inline CTAs — always mono, uppercase, wide-tracked." }
+    },
+    "shadows": [
+      { "name": "nav-glass", "value": "0 12px 32px rgba(2,5,20,.35), inset 0 1px 0 rgba(200,220,255,.14)", "purpose": "The floating nav pill's ambient glass shadow — the one sanctioned shadow in the report world, inherited from the Hero's glass language." },
+      { "name": "nav-glass-compact", "value": "0 8px 22px rgba(2,5,20,.45), inset 0 1px 0 rgba(200,220,255,.14)", "purpose": "Nav shadow once docked near the top edge after scrolling past 40px." },
+      { "name": "cta-hover-glow", "value": "0 0 24px rgba(124,92,255,.45)", "purpose": "Nav CTA pill hover — the sanctioned Hero Purple crossover." }
+    ],
+    "motion": [
+      { "name": "nav-dock", "value": "top .45s cubic-bezier(.16,1,.3,1)", "purpose": "Nav pill's top offset animating from 14px (resting) to 4px (docked) on scroll, and back." },
+      { "name": "ease-standard", "value": "cubic-bezier(.16,1,.3,1)", "purpose": "Default easing for hover/interaction transitions (thumbnail scale, row color shifts, CTA hover)." }
+    ],
+    "breakpoints": [
+      { "name": "nav-collapse", "value": "760px" },
+      { "name": "item-thumb-drop", "value": "640px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Floating Nav Pill",
+      "kind": "nav",
+      "refersTo": "nav-pill",
+      "description": "The one component shared verbatim between the Hero and the report world — fixed glass pill, docks closer to the top on scroll.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-nav-brand\" href=\"#\">Logística do Futuro</a><div class=\"ds-nav-links\"><a href=\"#\">O evento</a><a href=\"#\" class=\"is-active\">Palestra</a><a href=\"#\">Entrevistas</a><a href=\"#\">Vídeos</a></div><a class=\"ds-nav-cta\" href=\"#\">Ver entrevistas<span class=\"ds-nav-cta-arrow\">→</span></a></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;gap:24px;padding:9px 10px 9px 22px;border-radius:999px;background:rgba(16,24,38,.92);border:1px solid rgba(170,196,255,.16);backdrop-filter:blur(18px) saturate(1.4);box-shadow:0 12px 32px rgba(2,5,20,.35),inset 0 1px 0 rgba(200,220,255,.14);font-family:Sora,sans-serif;} .ds-nav-brand{font-weight:600;font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;color:#dce6ff;} .ds-nav-links{flex:1;display:flex;justify-content:center;gap:28px;font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;} .ds-nav-links a{color:rgba(214,226,255,.78);text-decoration:none;transition:color .22s ease;} .ds-nav-links a:hover,.ds-nav-links a.is-active{color:#4FD1E8;} .ds-nav-cta{display:inline-flex;align-items:center;gap:10px;padding:8px 6px 8px 16px;border-radius:999px;border:1px solid rgba(140,120,255,.65);font-family:Sora,sans-serif;font-weight:600;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:#e9e4ff;text-decoration:none;transition:box-shadow .35s ease,border-color .35s ease,background .35s ease;} .ds-nav-cta:hover{box-shadow:0 0 24px rgba(124,92,255,.45);border-color:rgba(170,150,255,.95);background:rgba(90,70,220,.18);} .ds-nav-cta-arrow{display:grid;place-items:center;width:22px;height:22px;border-radius:999px;border:1px solid rgba(150,130,255,.6);font-size:11px;}"
+    },
+    {
+      "name": "Interview List Row",
+      "kind": "custom",
+      "refersTo": "item-row",
+      "description": "Signature component of the report world — the entire row (number, photo, text) is one clickable link, used for the 13-interview hub.",
+      "html": "<a class=\"ds-item\" href=\"#\"><span class=\"ds-item-num\">01</span><div class=\"ds-item-thumb\"><img src=\"\" alt=\"\"></div><div class=\"ds-item-txt\"><h3>MultiSat</h3><p class=\"ds-item-dek\">Do monitoramento à prevenção — Quando o gerenciamento de risco começa a entender o comportamento</p><span class=\"ds-item-more\">Ler entrevista →</span></div></a>",
+      "css": ".ds-item{display:grid;grid-template-columns:40px 200px minmax(0,1fr);gap:32px;align-items:start;padding:28px 0;border-bottom:1px solid #DCD6C9;color:inherit;text-decoration:none;cursor:pointer;} .ds-item-num{font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:13px;letter-spacing:.06em;color:#6B6559;padding-top:3px;} .ds-item-thumb{width:200px;aspect-ratio:16/9;overflow:hidden;border:1px solid #DCD6C9;border-radius:12px;background:#E2DDD2;} .ds-item-thumb img{width:100%;height:100%;object-fit:cover;transition:transform .45s cubic-bezier(.16,1,.3,1);} .ds-item:hover .ds-item-thumb img{transform:scale(1.08);} .ds-item h3{margin:0 0 6px;font-family:Sora,sans-serif;font-weight:600;font-size:23px;line-height:1.22;letter-spacing:-.02em;color:#14161A;transition:color .25s ease;} .ds-item:hover h3{color:#1F6F7D;} .ds-item-dek{margin:0;font-family:Spectral,Georgia,serif;font-weight:300;font-size:17px;line-height:1.6;color:#4A4842;} .ds-item-more{display:inline-block;margin-top:10px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#1F6F7D;transition:color .25s ease;} .ds-item:hover .ds-item-more{color:#4FD1E8;}"
+    },
+    {
+      "name": "Raio-X Fact Box",
+      "kind": "custom",
+      "refersTo": "raiox-box",
+      "description": "The recurring fact-sheet block closing every interview page — a rule, not a container.",
+      "html": "<div class=\"ds-raiox\"><h3>Raio-X: MultiSat</h3><dl><div><dt>O que é?</dt><dd>A estrutura de gerenciamento de risco do Grupo Apisul.</dd></div></dl></div>",
+      "css": ".ds-raiox{margin:48px 0;border-top:1px solid #14161A;padding-top:20px;} .ds-raiox h3{margin:0 0 20px;font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:#6B6559;} .ds-raiox dl{display:flex;flex-direction:column;gap:16px;margin:0;} .ds-raiox dl>div{border-bottom:1px solid #DCD6C9;padding-bottom:16px;} .ds-raiox dt{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#6B6559;margin:0 0 8px;} .ds-raiox dd{margin:0;font-family:Spectral,Georgia,serif;font-weight:300;font-size:16px;line-height:1.6;color:#14161A;}"
+    },
+    {
+      "name": "Stat Tile Grid",
+      "kind": "card",
+      "refersTo": "stat-tile",
+      "description": "1px-gap grid used for every numeric callout block (setor context, Safety results, Atvos scale, Apisul institutional numbers).",
+      "html": "<div class=\"ds-stats\"><div class=\"ds-stat\"><div class=\"ds-stat-v\">16,7%</div><div class=\"ds-stat-l\">queda no roubo de cargas entre 2024 e 2025</div></div><div class=\"ds-stat\"><div class=\"ds-stat-v\">R$ 5 bi</div><div class=\"ds-stat-l\">prejuízo anual com acidentes no transporte rodoviário</div></div></div>",
+      "css": ".ds-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:#DCD6C9;border:1px solid #DCD6C9;} .ds-stat{background:#F2EEE6;padding:22px 20px;} .ds-stat-v{font-family:Sora,sans-serif;font-weight:700;font-size:30px;letter-spacing:-.02em;color:#14161A;} .ds-stat-l{margin-top:8px;font-family:Spectral,Georgia,serif;font-weight:300;font-size:13px;line-height:1.4;color:#4A4842;}"
+    },
+    {
+      "name": "Inline Quote",
+      "kind": "custom",
+      "refersTo": "blockquote",
+      "description": "Sourced pull-quote treatment used throughout interview and palestra bodies — the report's one italic voice.",
+      "html": "<blockquote class=\"ds-quote\"><p>\"A tecnologia não decide no lugar do operador. Ela filtra o que chega até ele.\"</p></blockquote>",
+      "css": ".ds-quote{margin:28px 0;padding:4px 0 4px 24px;border-left:2px solid #4FD1E8;} .ds-quote p{margin:0;font-family:Spectral,Georgia,serif;font-weight:200;font-style:italic;font-size:21px;line-height:1.6;color:#33383F;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Field Report",
+    "overview": "The Hero is its own world — a cinematic, purple-lit sci-fi command console (video backdrop, live telemetry, glassmorphism) — and it is locked; this document does not govern it and no future work should redesign it. Everything a visitor reaches from the Hero — the panel feature, the 13 interview pages, the video hub — belongs to a second, deliberately different world: a sober navy-and-cream editorial report, modeled on Grupo Apisul's own prior event publication, Precarga 2026. The two worlds meet only at the shared floating nav, which borrows the Hero's glass treatment so the transition between them reads as one continuing site, not a jarring hand-off.\n\nWithin the report world, restraint carries the authority. Pages read like a printed trade-sector dossier: navy section breaks, cream reading columns, hairline rules instead of shadows or gradients, and a mono label style for every piece of metadata. Nothing competes with the reporting — quotes, numbers, and company facts are the content, and the system's job is to present them with unhurried confidence.",
+    "keyCharacteristics": [
+      "Two coexisting worlds: the Hero (locked, out of scope) and the Field Report (this document's actual subject).",
+      "Navy (#101826) for section breaks and the shared nav; warm cream (#F2EEE6) for reading surfaces.",
+      "Sora for structure, Spectral for reading, IBM Plex Mono for metadata — always uppercase, always letter-spaced.",
+      "Flat by design: hairline borders and 1px-gap grids do the separating; no drop-shadow vocabulary in the report world.",
+      "Cyan (#4FD1E8) is the one live accent, used sparingly against an otherwise achromatic palette."
+    ],
+    "rules": [
+      { "name": "The One Signal Rule", "body": "Signal Cyan appears only as evidence of interaction or life: an active nav state, a hover, a blockquote's rule, a real-time dot. It never fills a background or colors static body text.", "section": "colors" },
+      { "name": "The Two-World Rule", "body": "The Hero's palette and the Field Report's palette are never merged into one token set. A page is either Hero or Field Report; nothing blends the two beyond the shared nav pill and the sanctioned Hero Purple thread in the nav CTA.", "section": "colors" },
+      { "name": "The System-Voice Rule", "body": "If it's metadata, navigation, or a call-to-action fragment, it's IBM Plex Mono, uppercase, wide-tracked. If it's something the reader is meant to actually read, it's Spectral. Sora is reserved for hierarchy markers and never carries body copy.", "section": "typography" },
+      { "name": "The Flat-Report Rule", "body": "Nothing in the report world casts a colored or diffuse shadow. If two things need to feel separated, give them a hairline border or a navy/cream contrast — never a shadow.", "section": "elevation" },
+      { "name": "The Pill-or-Square Rule", "body": "Radius is binary: 999px (nav, avatar badges, the CTA's arrow chip) or a small 12px/square (photos, videos, content boxes). No medium radius anywhere.", "section": "shapes" }
+    ],
+    "dos": [
+      "Do keep the Hero exactly as built and treat it as read-only evidence, never as a pattern to extend into the report world.",
+      "Do make an entire list row (number + photo + text) a single link; never wrap only the title.",
+      "Do use IBM Plex Mono, uppercase, wide-tracked, for every piece of metadata.",
+      "Do separate content with hairline borders or navy/cream contrast, never with a drop shadow, inside the report world.",
+      "Do keep photo and video frames at 12px radius and every other report-world surface square-cornered or pill (999px).",
+      "Do let the shared nav pill dock closer to the top edge on scroll and return to its resting position at the top of the page, on every page including the Hero."
+    ],
+    "donts": [
+      "Don't redesign, restyle, or re-theme the Hero section under any circumstance.",
+      "Don't introduce drop shadows, colored glows, or card containers with fill+shadow inside the report world (the nav pill's glass shadow is the sole exception).",
+      "Don't blend the Hero's palette with the report's palette into a single token set.",
+      "Don't reword, reattribute, or invent quotes and company facts; all interview and palestra copy is sourced and fixed.",
+      "Don't add a hover/active state to Signal Cyan anywhere it would stop being rare."
+    ]
+  }
+}
