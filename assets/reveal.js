@@ -127,9 +127,19 @@
     counters.forEach((el) => counterIo.observe(el));
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', setup);
-  } else {
+  function start() {
+    // Roda logo, e de novo algumas vezes nos primeiros segundos: em páginas
+    // com o runtime da Hero (x-dc), o conteúdo é montado de forma assíncrona
+    // e pode não existir ainda no DOM no instante em que este script executa.
+    // Cada chamada de setup() é segura de repetir (elementos já marcados são
+    // ignorados), então essas repetições só pegam o que apareceu depois.
     setup();
+    [50, 150, 400, 900, 1800].forEach((ms) => setTimeout(setup, ms));
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', start);
+  } else {
+    start();
   }
 })();
