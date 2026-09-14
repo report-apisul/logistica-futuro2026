@@ -134,12 +134,16 @@ body[data-density="Mínima"] [data-tier="3"],body[data-density="Mínima"] [data-
 
     <nav class="site-nav" style="position:fixed;top:14px;left:2.4vw;right:2.4vw;max-width:calc(1180px + 4.8vw);margin:0 auto;z-index:70;display:flex;align-items:center;gap:24px;padding:9px 10px 9px 22px;border-radius:999px;background:linear-gradient(140deg,rgba(16,24,38,.62),rgba(16,24,38,.55));border:1px solid rgba(170,196,255,.16);backdrop-filter:blur(18px) saturate(1.1);box-shadow:0 12px 32px rgba(2,5,20,.35),inset 0 1px 0 rgba(200,220,255,.14);animation:hf-in .9s ease both">
       <span style="font:600 13px/1 'Switzer',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#dce6ff;white-space:nowrap">Logística do Futuro</span>
-      <div style="flex:1;display:flex;justify-content:center;gap:clamp(14px,2.4vw,38px);flex-wrap:nowrap">
-        <a href="#evento" data-tier="2" style="font:500 12px/1 'Switzer',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:rgba(214,226,255,.78)" style-hover="color:#fff">O evento</a>
-        <a href="palestra.html" data-tier="2" style="font:500 12px/1 'Switzer',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:rgba(214,226,255,.78)" style-hover="color:#fff">Palestra</a>
-        <a href="entrevistas/index.html" data-tier="2" style="font:500 12px/1 'Switzer',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:rgba(214,226,255,.78)" style-hover="color:#fff">Entrevistas</a>
-        <a href="videos.html" data-tier="2" style="font:500 12px/1 'Switzer',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:rgba(214,226,255,.78)" style-hover="color:#fff">Vídeos</a>
+      <input type="checkbox" id="navToggle" class="nav-toggle-input">
+      <div class="links" style="flex:1;display:flex;justify-content:center;gap:clamp(14px,2.4vw,38px);flex-wrap:nowrap">
+        <a href="#evento" style="font:500 12px/1 'Switzer',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:rgba(214,226,255,.78)" style-hover="color:#fff">O evento</a>
+        <a href="palestra.html" style="font:500 12px/1 'Switzer',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:rgba(214,226,255,.78)" style-hover="color:#fff">Palestra</a>
+        <a href="entrevistas/index.html" style="font:500 12px/1 'Switzer',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:rgba(214,226,255,.78)" style-hover="color:#fff">Entrevistas</a>
+        <a href="videos.html" style="font:500 12px/1 'Switzer',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:rgba(214,226,255,.78)" style-hover="color:#fff">Vídeos</a>
       </div>
+      <label for="navToggle" class="nav-toggle-btn" aria-label="Abrir menu">
+        <span class="bars"><span></span><span></span><span></span></span>
+      </label>
       <a href="#evento" style="display:inline-flex;align-items:center;gap:12px;padding:10px 14px 10px 20px;border-radius:999px;border:1px solid rgba(140,120,255,.65);font:600 12px/1 'Switzer',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#e9e4ff;transition:box-shadow .35s ease,border-color .35s ease,background .35s ease;white-space:nowrap" style-hover="box-shadow:0 0 24px rgba(124,92,255,.45);border-color:rgba(170,150,255,.95);background:rgba(90,70,220,.18)">Explorar
         <span style="display:grid;place-items:center;width:26px;height:26px;border-radius:999px;border:1px solid rgba(150,130,255,.6)">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h14M13 6l6 6-6 6"></path></svg>

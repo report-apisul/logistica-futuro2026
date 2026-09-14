@@ -96,12 +96,53 @@ img { max-width: 100%; display: block; }
   content: '→'; display: grid; place-items: center; width: 22px; height: 22px;
   border-radius: 999px; border: 1px solid rgba(150,130,255,.6); font-size: 11px;
 }
+/* menu hambúrguer: sem JS, via <input type="checkbox"> + <label>, então
+   funciona por teclado e leitor de tela como qualquer disclosure nativo. */
+.nav-toggle-input { position: absolute; opacity: 0; pointer-events: none; width: 1px; height: 1px; }
+.nav-toggle-btn { display: none; }
 @media (max-width: 760px) {
-  .site-nav .links { display: none; }
   .site-nav { gap: 10px; padding: 7px 7px 7px 16px; }
   .site-nav .brand { font-size: 11px; }
   .site-nav .cta { padding: 6px 6px 6px 12px; font-size: 10px; gap: 8px; }
   .site-nav .cta::after { width: 20px; height: 20px; }
+
+  .nav-toggle-btn {
+    display: flex; align-items: center; justify-content: center;
+    width: 30px; height: 30px; flex: none; cursor: pointer;
+    color: rgba(214,226,255,.78); transition: color .22s ease;
+  }
+  .nav-toggle-btn .bars { position: relative; width: 16px; height: 11px; flex: none; }
+  .nav-toggle-btn .bars span {
+    position: absolute; left: 0; right: 0; height: 1px; background: currentColor;
+    transition: transform .25s ease, opacity .2s ease;
+  }
+  .nav-toggle-btn .bars span:nth-child(1) { top: 0; }
+  .nav-toggle-btn .bars span:nth-child(2) { top: 5px; }
+  .nav-toggle-btn .bars span:nth-child(3) { top: 10px; }
+  .nav-toggle-input:checked ~ .nav-toggle-btn { color: var(--cyan); }
+  .nav-toggle-input:checked ~ .nav-toggle-btn .bars span:nth-child(1) { transform: translateY(5px) rotate(45deg); }
+  .nav-toggle-input:checked ~ .nav-toggle-btn .bars span:nth-child(2) { opacity: 0; }
+  .nav-toggle-input:checked ~ .nav-toggle-btn .bars span:nth-child(3) { transform: translateY(-5px) rotate(-45deg); }
+
+  .site-nav .links {
+    display: flex !important; flex: none; flex-direction: column; align-items: stretch; gap: 0;
+    position: absolute; top: calc(100% + 10px); left: 0; right: 0; z-index: 59;
+    background: rgba(16,24,38,.97); border: 1px solid rgba(170,196,255,.16); border-radius: 18px;
+    backdrop-filter: blur(18px) saturate(1.2);
+    max-height: 0; overflow: hidden; opacity: 0; pointer-events: none;
+    transition: max-height .35s cubic-bezier(.16,1,.3,1), opacity .25s ease;
+  }
+  .nav-toggle-input:checked ~ .links {
+    max-height: 320px; opacity: 1; pointer-events: auto;
+    box-shadow: 0 16px 40px rgba(2,5,20,.5);
+  }
+  .site-nav .links a {
+    padding: 14px 18px; border-bottom: 1px solid rgba(170,196,255,.1);
+  }
+  .site-nav .links a:last-child { border-bottom: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .site-nav .links, .nav-toggle-btn .bars span { transition: none !important; }
 }
 
 /* ---------------- hero interno (páginas que não são a Home) ---------------- */
