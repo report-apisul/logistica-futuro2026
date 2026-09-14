@@ -17,7 +17,7 @@ const NAV = `<nav class="site-nav">
 
 const FOOTER = `<footer class="site-footer">
   <div class="wrap">
-    <p>Logística do Futuro — cobertura especial do Grupo Apisul.</p>
+    <p>Logística do Futuro · cobertura especial do Grupo Apisul.</p>
     <p><a href="../index.html">Voltar ao início</a></p>
   </div>
 </footer>`;
@@ -76,7 +76,7 @@ const COMPANIES = [
     kicker: 'Do monitoramento à prevenção',
     title: 'Quando o gerenciamento de risco começa a entender o comportamento',
     byline: 'Por Eduardo Domingos, diretor de operações da Apisul',
-    dek: 'Câmeras embarcadas geram milhares de eventos por dia. A IA aprendeu a separar o que é ruído do que é risco real — e o motorista virou parte da equação, não só o veículo.',
+    dek: 'Câmeras embarcadas geram milhares de eventos por dia. A IA aprendeu a separar o que é ruído do que é risco real, e o motorista virou parte da equação, não só o veículo.',
     body: [
       'O gerenciamento de risco no transporte rodoviário está mudando. Durante anos o foco esteve na prevenção e resposta ao roubo de cargas. O desafio agora é diferente: entender o que acontece dentro da cabine antes que isso vire acidente.',
       'É nesse cenário que a MultiSat, estrutura de gerenciamento de risco do Grupo Apisul, combina monitoramento, telemetria, inteligência artificial e análise de comportamento do motorista.',
@@ -108,7 +108,7 @@ const COMPANIES = [
     kicker: 'Quando a apólice conhece a estrada',
     title: 'Seguro pensado para quem vive a operação',
     byline: 'Por João Machnick, Grupo Apisul',
-    dek: 'Coberturas que não existem em catálogo nenhum, criadas a partir de prejuízo real relatado por cliente — e uma reguladora própria que chega antes do saque da carga.',
+    dek: 'Coberturas que não existem em catálogo nenhum, criadas a partir de prejuízo real relatado por cliente, e uma reguladora própria que chega antes do saque da carga.',
     body: [
       'Vender seguro para transporte de cargas costuma significar aplicar uma tabela genérica sobre um risco que, na prática, muda de rota para rota. A Apisul Corretora trabalha diferente: constrói a apólice a partir do que realmente acontece na operação do cliente.',
       '*"A Corretora de Seguros do Grupo Apisul é especializada na cadeia de transporte e logística. Atuamos de forma consultiva junto a embarcadores e transportadores."*',
@@ -136,7 +136,7 @@ const COMPANIES = [
     kicker: 'O filme, não a foto',
     title: 'Como a Apisul lê o comportamento do motorista em tempo real',
     byline: 'Por Daniel Nobre, superintendente de Produtos Digitais e Tecnologia do Grupo Apisul',
-    dek: 'Um supercomputador na nuvem processa cinco câmeras simultâneas em vinte segundos — e um agente de voz por IA já liga sozinho para tratar alertas de rotina.',
+    dek: 'Um supercomputador na nuvem processa cinco câmeras simultâneas em vinte segundos, e um agente de voz por IA já liga sozinho para tratar alertas de rotina.',
     body: [
       'Uma câmera embarcada consegue ver um olho fechado. O que ela não consegue é dizer se aquilo é sono, ofuscamento de farol ou uma piscada comum. Foi esse limite de processamento que levou a Apisul a tirar a inteligência artificial de dentro do caminhão e colocá-la na nuvem.',
       '*"A nossa vertical de tecnologia é dividida em três pilares: infraestrutura interna, produtos digitais e o Centro de Pesquisa e Inovação. Nossa função é antecipar tendências de mercado."*',
@@ -165,7 +165,7 @@ const COMPANIES = [
     kicker: 'Motorista engajado, não motorista pressionado',
     title: 'A plataforma que trava o caminhão antes da viagem começar',
     byline: null,
-    dek: 'Quatro módulos, um objetivo: reduzir turnover, diesel e avarias — a começar pelo checklist que impede a saída de um veículo com pendência.',
+    dek: 'Quatro módulos, um objetivo: reduzir turnover, diesel e avarias, a começar pelo checklist que impede a saída de um veículo com pendência.',
     body: [
       'A Carga Online parte de um diagnóstico direto: fiscalizar mais não resolve o problema de fundo da frota. O caminho é engajar o motorista antes da viagem começar.',
       '*"A Carga Online é uma plataforma que apoia a transportadora e os embarcadores na gestão dos motoristas. Nós criamos quatro módulos principais que entregam justamente essa eficiência operacional."*',
@@ -213,7 +213,7 @@ const COMPANIES = [
     kicker: 'Vinte e seis anos de hardware',
     title: 'Até virar integrador de qualquer tecnologia',
     byline: null,
-    dek: 'De fabricante de rastreador a integrador universal — com um sensor de pneu que avisa antes do incêndio e um checklist que roda só no WhatsApp.',
+    dek: 'De fabricante de rastreador a integrador universal, com um sensor de pneu que avisa antes do incêndio e um checklist que roda só no WhatsApp.',
     body: [
       'A OmniLink não nasceu como plataforma. Nasceu como fabricante de rastreador e foi mudando de papel conforme o mercado se fragmentava.',
       '*"A OmniLink é uma empresa de tecnologia com soluções voltadas para todo o ecossistema do transporte. A OmniLink tem 26 anos de mercado e foi uma das pioneiras no setor. Hoje não somos apenas uma empresa de hardware, mas desenvolvemos plataformas, softwares e um integrador capaz de operar com qualquer tecnologia de mercado."*',
@@ -236,7 +236,7 @@ const COMPANIES = [
     kicker: 'O rosto como chave',
     title: 'Biometria facial trava o caminhão até confirmar quem está dirigindo',
     byline: null,
-    dek: 'Rastreamento, gerenciamento de risco, telemetria e videomonitoramento reunidos numa interface só — travada por reconhecimento facial do motorista.',
+    dek: 'Rastreamento, gerenciamento de risco, telemetria e videomonitoramento reunidos numa interface só, travada por reconhecimento facial do motorista.',
     body: [
       'A SIGhRA aposta em um único ponto de verdade: se o rosto não bate com o cadastro, o caminhão não sai.',
       '*"A SIGhRA é uma empresa de tecnologia com 17 anos de mercado no segmento de rastreamento e gerenciamento de risco. Desenvolvemos hardware e plataforma proprietários com leitura de dados telemáticos do veículo, gerando relatórios de desempenho, consumo de combustível e indicadores de uso da frota."*',
@@ -302,7 +302,7 @@ const COMPANIES = [
     kicker: 'Um imobilizador que ninguém desarma em segundos',
     title: 'Mesh entre 42 mil caminhões contra roubo de carga',
     byline: null,
-    dek: 'Sem conexão física com o chicote elétrico, o T4S trava sozinho ao detectar jammer — e uma câmera com IA já reconhece arma antes da abordagem.',
+    dek: 'Sem conexão física com o chicote elétrico, o T4S trava sozinho ao detectar jammer, e uma câmera com IA já reconhece arma antes da abordagem.',
     body: [
       'A T4S ataca a fragilidade dos bloqueios tradicionais: fio cortado, sistema desarmado, caminhão liberado em minutos.',
       '*"A T4S é uma empresa de inovação focada no combate ao roubo de cargas e veículos pesados, aplicando inteligência artificial e tecnologias patenteadas para ações preventivas e preditivas antes que o sinistro se concretize."*',
@@ -346,7 +346,7 @@ const COMPANIES = [
     kicker: 'Quando o GPS cala',
     title: 'A radiofrequência continua falando',
     byline: null,
-    dek: 'Uma rede própria de antenas de RF, imune a jammer, localiza carga escondida em galpão fechado — com busca terrestre e aérea.',
+    dek: 'Uma rede própria de antenas de RF, imune a jammer, localiza carga escondida em galpão fechado, com busca terrestre e aérea.',
     body: [
       'O Grupo Tracker aposta em uma tecnologia que jammer nenhum consegue derrubar: radiofrequência com rede própria de antenas.',
       '*"O Grupo Tracker atua há mais de 25 anos no mercado e tem como carro-chefe a tecnologia de rastreamento e recuperação de veículos e cargas por radiofrequência. Possuímos uma rede própria e exclusiva de antenas e rádio frequência em todo o país, acompanhada por uma estrutura operacional terrestre e aérea especializada."*',
@@ -398,7 +398,7 @@ function pageHtml(c, prevC, nextC) {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>${c.name} — Logística do Futuro</title>
+<title>${c.name} · Logística do Futuro</title>
 <meta name="description" content="${c.dek}">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Spectral:ital,wght@0,200;0,300;0,400;1,200;1,300&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -459,7 +459,7 @@ function hubHtml() {
         ${thumb}
         <div class="txt">
           <h3>${c.name}</h3>
-          <p class="dek">${c.kicker} — ${c.title}</p>
+          <p class="dek">${c.kicker}: ${c.title}</p>
           <span class="more">Ler entrevista →</span>
         </div>
       </a>`;
@@ -470,7 +470,7 @@ function hubHtml() {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Entrevistas — Logística do Futuro</title>
+<title>Entrevistas · Logística do Futuro</title>
 <meta name="description" content="13 empresas, 13 abordagens diferentes para o mesmo problema: segurança, rastreamento e inteligência no transporte de cargas.">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Spectral:ital,wght@0,200;0,300;0,400;1,200;1,300&family=IBM+Plex+Mono:wght@400;500&display=swap">
