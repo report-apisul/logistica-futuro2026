@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A tecnologia é a tinta da parede — Logística do Futuro</title>
+<meta name="description" content="Painel Apisul & Atvos: Inteligência Artificial, Torres Conectadas e o Fator Humano, no evento Logística do Futuro.">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700,800,900&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+  .panel-head{padding:clamp(56px,10vh,110px) 0 40px;border-bottom:1px solid var(--border);background:radial-gradient(120% 100% at 15% 0%,rgba(124,92,255,.14),transparent 60%)}
+  .panel-head .eyebrow{color:var(--accent-2)}
+  .panel-head h1{font:800 clamp(30px,4.6vw,52px)/1.1 'Switzer',sans-serif;letter-spacing:-.02em;margin:14px 0 0;max-width:20ch}
+  .panel-head .lede{max-width:60ch}
+  .speakers-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px}
+  .speakers-row .speaker{margin:0;flex:1;min-width:230px}
+  .stats-block{margin:64px 0}
+  .stats-block h2{font:700 22px/1.3 'Switzer',sans-serif;color:#fff;margin:0 0 6px}
+  .stats-block .sub{font:400 13px/1.5 'Switzer',sans-serif;color:var(--text-mute);margin:0 0 18px}
+  .diagram{margin:56px 0;padding:32px clamp(20px,4vw,40px);border-radius:var(--radius);background:linear-gradient(155deg,rgba(20,30,70,.1),rgba(6,10,30,.07));border:1px solid var(--border)}
+  .diagram h2{margin:0 0 26px;font:700 20px/1.3 'Switzer',sans-serif;color:#fff}
+  .flow{display:flex;flex-wrap:wrap;gap:0;align-items:stretch}
+  .flow-step{flex:1;min-width:150px;display:flex;flex-direction:column;gap:10px;padding:18px;position:relative}
+  .flow-step .ix{width:30px;height:30px;border-radius:9px;display:flex;align-items:center;justify-content:center;background:linear-gradient(155deg,rgba(124,92,255,.35),rgba(94,231,255,.2));font:700 13px/1 'Switzer',sans-serif;color:#fff}
+  .flow-step p{margin:0;font:400 13px/1.5 'Switzer',sans-serif;color:var(--text-soft)}
+  .flow-step:not(:last-child)::after{content:'';position:absolute;right:-1px;top:24px;bottom:24px;width:1px;background:var(--border-strong)}
+  @media (max-width:820px){.flow{flex-direction:column}.flow-step:not(:last-child)::after{display:none}}
+  .attrito{margin:56px 0;padding:28px clamp(20px,4vw,36px);border-radius:var(--radius);border:1px solid rgba(255,120,120,.22);background:linear-gradient(155deg,rgba(90,20,30,.14),rgba(6,10,30,.08))}
+  .attrito h2{margin:0 0 12px;font:700 20px/1.3 'Switzer',sans-serif;color:#ffb4b4}
+  .fator-humano{margin:56px 0}
+  .fator-humano h2{font:700 22px/1.3 'Switzer',sans-serif;color:#fff;margin:0 0 20px}
+  .fh-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+  .fh-card{padding:20px;border-radius:14px;background:var(--card);border:1px solid var(--border)}
+  .fh-card b{display:block;color:#fff;font:600 13px/1.4 'Switzer',sans-serif;margin-bottom:8px}
+  .fh-card span{font:400 13px/1.5 'Switzer',sans-serif;color:var(--text-soft)}
+  .closing-quote{margin:72px 0 40px;padding:40px clamp(24px,5vw,56px);text-align:center;border-radius:var(--radius);background:linear-gradient(155deg,rgba(124,92,255,.14),rgba(6,10,30,.2));border:1px solid var(--border-strong)}
+  .closing-quote p{margin:0;font:600 clamp(19px,2.6vw,28px)/1.4 'Switzer',sans-serif;color:#fff;font-style:italic;max-width:34ch;margin:0 auto}
+  .closing-quote cite{display:block;margin-top:18px;font:500 12px/1 'Switzer',sans-serif;font-style:normal;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-2)}
+  .closing-q{margin:56px 0;padding:28px 0;text-align:center;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+  .closing-q p{margin:0;font:500 clamp(16px,2vw,20px)/1.5 'Switzer',sans-serif;color:var(--text-soft);font-style:italic}
+  .video-cta{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin:16px 0 0;padding:18px 22px;border-radius:14px;background:rgba(94,231,255,.06);border:1px solid rgba(94,231,255,.24)}
+  .video-cta a{display:inline-flex;align-items:center;gap:8px;font:600 12px/1 'Switzer',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#5ee7ff}
+  .video-cta p{margin:0;font:400 13px/1.5 'Switzer',sans-serif;color:var(--text-soft);flex:1}
+  .glossario{margin:56px 0}
+  .glossario h2{font:700 20px/1.3 'Switzer',sans-serif;color:#fff;margin:0 0 18px}
+  .glossario dl{display:grid;gap:16px}
+  .glossario dt{font:700 14px/1.4 'Switzer',sans-serif;color:var(--accent-2)}
+  .glossario dd{margin:4px 0 0;font:400 14px/1.55 'Switzer',sans-serif;color:var(--text-soft)}
+</style>
+</head>
+<body>
+<nav class="site-nav">
+  <a class="brand" href="index.html">Logística do Futuro</a>
+  <div class="links">
+    <a href="index.html#evento">O evento</a>
+    <a href="palestra.html" class="active">Palestra</a>
+    <a href="entrevistas/index.html">Entrevistas</a>
+    <a href="videos.html">Vídeos</a>
+  </div>
+  <a class="cta" href="entrevistas/index.html">Ver entrevistas</a>
+</nav>
+
+<header class="panel-head">
+  <div class="wrap">
+    <span class="eyebrow" style="font:600 11px/1 'Switzer',sans-serif;letter-spacing:.28em;text-transform:uppercase">Painel Apisul & Atvos</span>
+    <h1>A tecnologia é a tinta da parede</h1>
+    <p class="lede" style="margin-top:16px;font:400 clamp(15px,1.4vw,19px)/1.6 'Switzer',sans-serif;color:var(--text-soft)">O que muda quando o gerenciamento de risco olha para o acidente, não só para o roubo. Inteligência Artificial, Torres Conectadas e o Fator Humano, no palco do Logística do Futuro.</p>
+
+    <div class="video-cta">
+      <p>Veja trechos em vídeo dessa palestra e o making of da cobertura completa.</p>
+      <a href="videos.html">Assistir aos vídeos →</a>
+    </div>
+
+    <div class="speakers-row">
+      <div class="speaker">
+        <div class="ph">MB</div>
+        <div><h4>Marco Aurélio Badim</h4><p>Abertura institucional, Grupo Apisul</p></div>
+      </div>
+      <div class="speaker">
+        <div class="ph">DN</div>
+        <div><h4>Daniel Nobre</h4><p>Superintendente de Produtos Digitais e Tecnologia, Apisul</p></div>
+      </div>
+      <div class="speaker">
+        <div class="ph">DC</div>
+        <div><h4>Daniel Cunha</h4><p>Logística, Atvos</p></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <article class="article" style="max-width:820px">
+
+    <p class="byline">Grupo Apisul e Atvos, no palco do Logística do Futuro</p>
+
+    <p>Por décadas, gerenciamento de risco no transporte significou uma coisa: evitar que a carga fosse roubada. O painel que reuniu Grupo Apisul e Atvos mostrou outro número tomando a frente dessa conta.</p>
+
+    <h2>Uma linha caindo, outra parada</h2>
+    <p>Marco Aurélio Badim abriu contextualizando a escala da Apisul: 41 anos de mercado, 1.300 colaboradores, mais de 180 pontos de atendimento nas rodovias e uma base que monitora, em média, 5 milhões de viagens por ano.</p>
+
+    <div class="stats-block">
+      <h2>Apisul em números</h2>
+      <p class="sub">Tamanho da empresa — não é efeito da tecnologia, é escala institucional.</p>
+      <div class="stats">
+        <div class="stat"><div class="v">41 anos</div><div class="l">de mercado</div></div>
+        <div class="stat"><div class="v">1.300</div><div class="l">colaboradores</div></div>
+        <div class="stat"><div class="v">180+</div><div class="l">pontos de atendimento em rodovias</div></div>
+        <div class="stat"><div class="v">5 milhões</div><div class="l">de viagens monitoradas por ano, em média</div></div>
+      </div>
+    </div>
+
+    <p>É essa base de dados que sustenta o diagnóstico apresentado por Daniel Nobre, superintendente de Produtos Digitais e Tecnologia da Apisul.</p>
+
+    <blockquote><p>"A gente vê com relação ao roubo de cargas uma redução significativa de 2024 para 2025 de 16,7%. Por outro lado, no que diz respeito a acidentes, o número permaneceu praticamente estável, porém o custo dos acidentes subiu astronomicamente, ultrapassando R$ 5 bilhões por ano no Brasil. A cada 8 acidentes, 1 resulta em vítima fatal."</p></blockquote>
+
+    <div class="stats-block">
+      <h2>Cenário do setor</h2>
+      <p class="sub">Contexto de mercado — não é resultado da solução de Safety da Apisul.</p>
+      <div class="stats">
+        <div class="stat"><div class="v">16,7%</div><div class="l">queda no roubo de cargas entre 2024 e 2025</div></div>
+        <div class="stat"><div class="v">R$ 5 bi</div><div class="l">prejuízo anual com acidentes no transporte rodoviário</div></div>
+        <div class="stat"><div class="v">1 em 8</div><div class="l">acidentes no setor resulta em vítima fatal</div></div>
+      </div>
+    </div>
+
+    <p>O roubo está sendo controlado. O acidente, não. E é aí que a conversa muda de assunto.</p>
+
+    <h2>O que acontece quando a solução funciona</h2>
+    <p>Nas operações que contrataram o monitoramento dedicado da Apisul, o resultado aparece em número fechado.</p>
+
+    <blockquote><p>"A gente teve uma redução do número de eventos de 8,4%, o valor de cargas envolvidas nesses sinistros teve uma redução significativa, o prejuízo estimado caiu drasticamente quase 24%. O prejuízo médio por evento caiu 17,4% e as perdas em si caíram 1,4 ponto percentual comparando um ano para o outro."</p></blockquote>
+
+    <div class="stats-block">
+      <h2>Resultado da solução de Safety</h2>
+      <p class="sub">Operações que contrataram o monitoramento dedicado da Apisul.</p>
+      <div class="stats b">
+        <div class="stat"><div class="v">8,4%</div><div class="l">redução no total de eventos de risco</div></div>
+        <div class="stat"><div class="v">24%</div><div class="l">queda no prejuízo estimado de cargas em sinistro</div></div>
+        <div class="stat"><div class="v">17,4%</div><div class="l">redução no prejuízo médio por evento</div></div>
+      </div>
+    </div>
+
+    <p>Parte desse resultado não é só tecnologia. É resposta rápida no local: a reguladora de sinistros do grupo, a Excel, chega ao acidente antes que a carga seja saqueada.</p>
+
+    <h2>60 mil litros de etanol por viagem</h2>
+    <p>Daniel Cunha, da Atvos, trouxe a escala do problema real: cerca de 2.500 viagens de etanol por mês, mais 1.500 de açúcar VHP, em caminhões que carregam até 60 mil litros por viagem. Carga perigosa, em volume alto, rodando o país inteiro.</p>
+
+    <div class="stats-block">
+      <h2>Escala da operação Atvos</h2>
+      <div class="stats c">
+        <div class="stat"><div class="v">2.500</div><div class="l">viagens de etanol por mês</div></div>
+        <div class="stat"><div class="v">1.500</div><div class="l">viagens de açúcar VHP por mês</div></div>
+        <div class="stat"><div class="v">60 mil L</div><div class="l">etanol transportado por viagem</div></div>
+      </div>
+    </div>
+
+    <blockquote><p>"A gente tem o desafio de chegar cada vez mais próximo dos motoristas, porque realmente é ali que faz a diferença."</p></blockquote>
+
+    <h2>O sinal que não chega</h2>
+    <p>Existe uma ilusão de cobertura no Brasil: a maioria dos municípios tem sinal de celular, mas trecho de canavial, serra ou área florestal ainda cria sombra.</p>
+    <p>A Atvos resolveu parte do problema instalando Wi-Fi em suas oito unidades industriais, espalhadas por São Paulo, Goiás, Mato Grosso e Mato Grosso do Sul. O caminhão entra no pátio, conecta automaticamente, descarrega vídeo e dado acumulado. Para o trajeto entre usinas, a aposta é conectividade via satélite.</p>
+    <p>Daniel Nobre foi direto sobre o que isso significa na prática: receber o vídeo com atraso não invalida o projeto de prevenção de acidentes, porque o que importa é reconstruir o comportamento do motorista ao longo da viagem, não reagir a um segundo isolado.</p>
+
+    <div class="attrito">
+      <h2>O ponto de atrito: quando o conforto vira risco escondido</h2>
+      <p style="margin:0 0 16px">Uma câmera de fadiga dispara alerta a cada bocejo de 2 segundos. O motorista se incomoda com o som constante na cabine. O transportador, pra reduzir o incômodo, aumenta o limite para 4 segundos.</p>
+      <blockquote style="margin:0 0 16px"><p>"Uma fadiga tá configurada ali: se o motorista tiver um bocejo de 2 segundos, o transportador vai e altera isso para 4 segundos. Ou seja, vai reduzir o número de eventos no papel, porém o risco aumenta se a gente não levar em consideração esses pontos."</p></blockquote>
+      <p style="margin:0 0 16px">O relatório fica mais bonito: menos alertas no papel. O risco na estrada continua o mesmo, só que agora ninguém mais vê.</p>
+      <p style="margin:0">A resposta da Apisul é não mexer na sensibilidade do equipamento. A régua fica rígida no caminhão, e o excesso de alerta falso é filtrado depois, na nuvem.</p>
+    </div>
+
+    <h2>A foto é uma coisa, o filme é outra</h2>
+    <p>É a frase que resume toda a arquitetura técnica descrita por Nobre. A plataforma Apisul Integra, em desenvolvimento desde 2006, recebe o vídeo bruto de até 5 câmeras simultâneas e processa em menos de 20 segundos na nuvem, cruzando a imagem com telemetria, velocidade, frenagem, histórico do motorista.</p>
+
+    <blockquote><p>"Uma frenagem brusca isolada pode ser uma manobra defensiva legítima; porém, se combinada a excesso de velocidade e uso de celular minutos antes, o risco é classificado no nível máximo."</p></blockquote>
+
+    <div class="diagram">
+      <h2>Como funciona o Apisul Integra</h2>
+      <div class="flow">
+        <div class="flow-step"><span class="ix">1</span><p>Câmera grava o motorista e a rodovia</p></div>
+        <div class="flow-step"><span class="ix">2</span><p>Vídeo bruto sobe pra nuvem — até 5 câmeras simultâneas</p></div>
+        <div class="flow-step"><span class="ix">3</span><p>IA cruza o vídeo com telemetria dos últimos 30 min: velocidade, frenagem, histórico</p></div>
+        <div class="flow-step"><span class="ix">4</span><p>Sistema gera um score de risco a partir do contexto completo</p></div>
+        <div class="flow-step"><span class="ix">5</span><p>Bino liga pro motorista, ou o caso vai pra um operador humano</p></div>
+      </div>
+    </div>
+
+    <p>Um evento sozinho não diz nada. A combinação, sim.</p>
+    <p>Quando o sistema decide que algo precisa ser tratado, entra o Bino, agente de voz por inteligência artificial que liga automaticamente para o motorista ou o transportador. Trata o que é rotina. Libera o operador humano para o que exige julgamento.</p>
+
+    <div class="fator-humano">
+      <h2>O fator humano — o que a tecnologia sozinha não resolve</h2>
+      <p style="margin:0 0 20px;font:400 15px/1.6 'Switzer',sans-serif;color:var(--text-soft)">Fechando a apresentação, os dois palestrantes trouxeram o lado que nenhum painel de tecnologia costuma mencionar: saúde e vínculo do motorista.</p>
+      <div class="fh-grid">
+        <div class="fh-card"><b>Sensibilização do motorista</b><span>O monitoramento apresentado não como punição, mas como um "Anjo da Guarda" para garantir o retorno seguro do profissional para casa.</span></div>
+        <div class="fh-card"><b>Checklist de saúde</b><span>Verificação de sono e uso de remédio antes da viagem, encerrada com uma mensagem gravada por um filho, pedindo para o pai dirigir com cuidado.</span></div>
+        <div class="fh-card"><b>Suporte psicológico preventivo</b><span>Consultas periódicas, sempre agendadas no dia de folga do motorista, para não interferir na condução no mesmo dia.</span></div>
+        <div class="fh-card"><b>Gestão de consequência</b><span>Manutenção constante da frota e uso real dos dados para treinamento, para que a informação gerada não vire só número guardado sem uso.</span></div>
+      </div>
+    </div>
+
+    <div class="closing-quote">
+      <p>"A tecnologia é a tinta da parede. Não adianta nada ter uma tecnologia ou uma torre de IA trabalhando se não houver processos estruturados, governança e respeito pelas pessoas por trás da operação."</p>
+      <cite>Daniel Cunha, Atvos</cite>
+    </div>
+
+    <div class="glossario">
+      <h2>Mini-glossário</h2>
+      <dl>
+        <div><dt>Safety</dt><dd>Nome que o mercado deu à prevenção de acidentes de trânsito, em contraste com o gerenciamento de risco tradicional, voltado ao combate ao roubo de cargas.</dd></div>
+        <div><dt>Falso positivo</dt><dd>Alerta disparado por engano: um bocejo comum, uma sombra, um movimento de cabeça que a câmera interpreta como sinal de fadiga sem ser.</dd></div>
+        <div><dt>Régua de sensibilidade</dt><dd>O limite configurado no equipamento para disparar um alerta. Quanto mais frouxa, menos alertas aparecem, mas mais risco real passa despercebido.</dd></div>
+        <div><dt>Apisul Integra</dt><dd>Plataforma da Apisul, em desenvolvimento desde 2006, que recebe vídeo de câmeras veiculares e cruza com dado de telemetria para avaliar o contexto da viagem.</dd></div>
+      </dl>
+    </div>
+
+    <div class="closing-q">
+      <p>Sua operação ainda mede segurança pelo volume de roubo evitado, ou já olha para o acidente?</p>
+    </div>
+
+    <nav class="pagenav">
+      <a href="entrevistas/index.html"><span class="dir">Continue lendo</span>As 13 entrevistas</a>
+      <a href="videos.html"><span class="dir">Assista</span>Vídeos do evento →</a>
+    </nav>
+
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Logística do Futuro — cobertura especial do Grupo Apisul.</p>
+    <p><a href="index.html">Voltar ao início</a></p>
+  </div>
+</footer>
+</body>
+</html>
