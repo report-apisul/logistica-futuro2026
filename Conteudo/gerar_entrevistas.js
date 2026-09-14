@@ -402,6 +402,8 @@ function pageHtml(c, prevC, nextC) {
 <meta name="description" content="${c.dek}">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Spectral:ital,wght@0,200;0,300;0,400;1,200;1,300&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=switzer@500,600&display=swap">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
 <body>
@@ -471,6 +473,8 @@ function hubHtml() {
 <meta name="description" content="13 empresas, 13 abordagens diferentes para o mesmo problema: segurança, rastreamento e inteligência no transporte de cargas.">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Spectral:ital,wght@0,200;0,300;0,400;1,200;1,300&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=switzer@500,600&display=swap">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
 <body>
