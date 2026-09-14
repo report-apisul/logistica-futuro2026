@@ -400,6 +400,17 @@ function pageHtml(c, prevC, nextC) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${c.name} · Logística do Futuro</title>
 <meta name="description" content="${c.dek}">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Logística do Futuro">
+<meta property="og:title" content="${c.name} · Logística do Futuro">
+<meta property="og:description" content="${c.dek}">
+<meta property="og:url" content="https://report-apisul.github.io/logistica-futuro2026/entrevistas/${c.slug}.html">
+<meta property="og:image" content="https://report-apisul.github.io/logistica-futuro2026/${c.photo ? 'entrevistas/fotos/' + c.photo : 'assets/og-image.jpg'}">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="${c.name} · Logística do Futuro">
+<meta name="twitter:description" content="${c.dek}">
+<meta name="twitter:image" content="https://report-apisul.github.io/logistica-futuro2026/${c.photo ? 'entrevistas/fotos/' + c.photo : 'assets/og-image.jpg'}">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Spectral:ital,wght@0,200;0,300;0,400;1,200;1,300&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <link rel="preconnect" href="https://api.fontshare.com">
@@ -472,6 +483,19 @@ function hubHtml() {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Entrevistas · Logística do Futuro</title>
 <meta name="description" content="13 empresas, 13 abordagens diferentes para o mesmo problema: segurança, rastreamento e inteligência no transporte de cargas.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Logística do Futuro">
+<meta property="og:title" content="Entrevistas · Logística do Futuro">
+<meta property="og:description" content="13 empresas, 13 abordagens diferentes para o mesmo problema: segurança, rastreamento e inteligência no transporte de cargas.">
+<meta property="og:url" content="https://report-apisul.github.io/logistica-futuro2026/entrevistas/index.html">
+<meta property="og:image" content="https://report-apisul.github.io/logistica-futuro2026/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Entrevistas · Logística do Futuro">
+<meta name="twitter:description" content="13 empresas, 13 abordagens diferentes para o mesmo problema: segurança, rastreamento e inteligência no transporte de cargas.">
+<meta name="twitter:image" content="https://report-apisul.github.io/logistica-futuro2026/assets/og-image.jpg">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Spectral:ital,wght@0,200;0,300;0,400;1,200;1,300&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <link rel="preconnect" href="https://api.fontshare.com">
