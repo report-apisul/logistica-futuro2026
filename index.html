@@ -29,12 +29,18 @@ html,body{background:#04060f}
 .evento-stats .stat{padding:20px;background:#F2EEE6}
 .evento-stats .stat .v{font-family:'Sora',sans-serif;font-weight:700;font-size:26px;color:#14161A}
 .evento-stats .stat .l{margin-top:6px;font-family:'Spectral',Georgia,serif;font-weight:300;font-size:12.5px;color:#4A4842}
-.evento-photo{position:relative;width:100vw;margin:44px calc(50% - 50vw) 0;height:clamp(260px,42vw,460px);overflow:hidden}
-.evento-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 38%;display:block;
-  -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 14%,#000 86%,transparent 100%);
-  mask-image:linear-gradient(90deg,transparent 0,#000 14%,#000 86%,transparent 100%)}
-.evento-photo .cap{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:rgba(20,22,26,.5);white-space:nowrap}
-@media (max-width:640px){.evento-photo{height:clamp(200px,68vw,320px)}.evento-photo img{-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 6%,#000 94%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 6%,#000 94%,transparent 100%)}}
+#evento{position:relative;overflow:hidden}
+.evento-photo-bg{position:absolute;inset:0;z-index:0;pointer-events:none}
+.evento-photo-bg img{width:100%;height:100%;object-fit:cover;object-position:78% 38%;display:block;
+  -webkit-mask-image:linear-gradient(90deg,transparent 0,transparent 34%,#000 62%,#000 100%);
+  mask-image:linear-gradient(90deg,transparent 0,transparent 34%,#000 62%,#000 100%)}
+#evento .wrap{position:relative;z-index:1}
+@media (max-width:900px){
+  .evento-photo-bg img{object-position:70% 38%;
+    -webkit-mask-image:linear-gradient(90deg,transparent 0,transparent 8%,#000 46%,#000 100%);
+    mask-image:linear-gradient(90deg,transparent 0,transparent 8%,#000 46%,#000 100%)}
+}
+@media (max-width:640px){.evento-photo-bg{opacity:.4}.evento-photo-bg img{-webkit-mask-image:none;mask-image:none;object-position:60% 38%}}
 .feature-card{display:flex;flex-wrap:wrap;gap:28px;align-items:center;margin-top:32px;padding:clamp(24px,3.4vw,40px);border:1px solid #22344C;background:#16202f}
 .feature-card .txt{flex:1;min-width:260px}
 .feature-card h3{margin:0 0 10px;font-family:'Sora',sans-serif;font-weight:600;font-size:clamp(19px,2.2vw,26px);line-height:1.28;letter-spacing:-.02em;color:#F2EEE6}
@@ -413,6 +419,9 @@ body[data-density="Mínima"] [data-tier="3"],body[data-density="Mínima"] [data-
       </section>
 
   <section id="evento" class="home-section">
+    <div class="evento-photo-bg">
+      <img src="uploads/evento-home.jpg" alt="Palco do Logística do Futuro, com plateia acompanhando a apresentação">
+    </div>
     <div class="wrap">
       <span class="home-eyebrow">O evento</span>
       <h2>Logística do Futuro</h2>
@@ -422,10 +431,6 @@ body[data-density="Mínima"] [data-tier="3"],body[data-density="Mínima"] [data-
         <div class="stat"><div class="v">1</div><div class="l">palestra de destaque cobrida</div></div>
         <div class="stat"><div class="v">R$ 5 bi</div><div class="l">é o prejuízo anual com acidentes no setor</div></div>
       </div>
-    </div>
-    <div class="evento-photo">
-      <img src="uploads/evento-home.jpg" alt="Palco do Logística do Futuro, com plateia acompanhando a apresentação">
-      <span class="cap">Logística do Futuro — 10ª edição</span>
     </div>
   </section>
 
