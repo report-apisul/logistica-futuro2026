@@ -442,6 +442,7 @@ ${NAV}
 </main>
 
 ${FOOTER}
+<script src="../assets/nav-scroll.js"></script>
 </body>
 </html>
 `;
@@ -495,6 +496,7 @@ ${items}
 </main>
 
 ${FOOTER}
+<script src="../assets/nav-scroll.js"></script>
 </body>
 </html>
 `;
