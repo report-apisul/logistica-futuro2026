@@ -364,14 +364,14 @@ const COMPANIES = [
       futuro: 'Integração da recuperação de ativos por RF a softwares de gestão de frota e telemetria.',
     } },
 
-  { n: 13, slug: 'ita-frio', name: 'Ita Frio', photo: 'ita-frio.png',
+  { n: 13, slug: 'ita-frio', name: 'Ita Fria', photo: 'ita-frio.png',
     kicker: 'Chocolate viajando em caminhão comum',
     title: 'Sem refrigeração ligada',
     byline: null,
     dek: 'Placas de PCM absorvem calor em vez de gelar, e eliminam a dependência de frigorífico caro na distribuição fracionada de produtos sensíveis.',
     body: [
-      'A Ita Frio resolve um problema de custo: caminhão frigorífico é caro, e nem toda carga sensível precisa de um.',
-      '*"A Ita Frio é fabricante de embalagens e soluções para logística térmica. Desenvolvemos uma caixa plástica retornável de alta durabilidade equipada com placas de PCM para o transporte com controle térmico passivo de produtos sensíveis, como chocolates e medicamentos."*',
+      'A Ita Fria resolve um problema de custo: caminhão frigorífico é caro, e nem toda carga sensível precisa de um.',
+      '*"A Ita Fria é fabricante de embalagens e soluções para logística térmica. Desenvolvemos uma caixa plástica retornável de alta durabilidade equipada com placas de PCM para o transporte com controle térmico passivo de produtos sensíveis, como chocolates e medicamentos."*',
       '**A placa que absorve calor em vez de gelar**',
       '*"As placas de PCM contêm um fluido estabilizador térmico que absorve e retém o calor. Garantimos a manutenção da temperatura interna na faixa de 15°C a 25°C para chocolates, ou de 2°C a 8°C para produtos refrigerados, sem a necessidade de ar-condicionado ou refrigeração ativa no caminhão."*',
       '**Testado nas rotas mais quentes do país**',
