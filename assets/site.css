@@ -194,13 +194,13 @@ main.wrap { padding-top: clamp(48px, 8vh, 88px); padding-bottom: clamp(40px, 7vh
 .item .thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform .45s cubic-bezier(.16,1,.3,1); }
 .item .thumb.placeholder { display: flex; align-items: center; justify-content: center; font-family: 'Sora', sans-serif; font-weight: 600; font-size: 24px; color: var(--label); border-style: dashed; }
 .item:hover .thumb img { transform: scale(1.08); }
-.item a.lk { display: block; color: inherit; }
+.item { color: inherit; text-decoration: none; cursor: pointer; }
 .item h3 {
   margin: 0 0 6px; font-family: 'Sora', sans-serif; font-weight: 600;
   font-size: clamp(18px, 2vw, 23px); line-height: 1.22; letter-spacing: -.02em; color: var(--ink);
   transition: color .25s ease;
 }
-.item a.lk:hover h3 { color: var(--teal); }
+.item:hover h3 { color: var(--teal); }
 .item .dek { margin: 0; font-weight: 300; font-size: clamp(15px, 1.35vw, 17px); line-height: 1.6; color: var(--body); max-width: 62ch; }
 .item .more {
   display: inline-block; margin-top: 10px; font-family: 'IBM Plex Mono', monospace; font-size: 10px;

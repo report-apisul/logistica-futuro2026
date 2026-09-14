@@ -453,15 +453,15 @@ function hubHtml() {
       ? `<div class="thumb"><img src="fotos/${c.photo}" alt="${c.name}"></div>`
       : `<div class="thumb placeholder">${c.name[0]}</div>`;
     const num = String(c.n).padStart(2, '0');
-    return `      <div class="item">
+    return `      <a class="item" href="${c.slug}.html">
         <span class="num">${num}</span>
         ${thumb}
-        <a class="lk" href="${c.slug}.html">
+        <div class="txt">
           <h3>${c.name}</h3>
           <p class="dek">${c.kicker} — ${c.title}</p>
           <span class="more">Ler entrevista →</span>
-        </a>
-      </div>`;
+        </div>
+      </a>`;
   }).join('\n');
 
   return `<!DOCTYPE html>
