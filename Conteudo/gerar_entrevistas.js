@@ -496,6 +496,14 @@ ${FOOTER}
 `;
 }
 
+const ORDER = [
+  'multisat', 'apisul-corretora-seguros', 'apisul-produtos-digitais-ia', 'sighra',
+  'carga-online', 'trucks-control', 'omnilink', 'jomed', 'x-global',
+  't4s-tecnologia', 'netfleet-driver-serie-a', 'grupo-tracker', 'ita-frio',
+];
+COMPANIES.sort((a, b) => ORDER.indexOf(a.slug) - ORDER.indexOf(b.slug));
+COMPANIES.forEach((c, i) => { c.n = i + 1; });
+
 function main() {
   fs.mkdirSync(OUT, { recursive: true });
   COMPANIES.forEach((c, i) => {
