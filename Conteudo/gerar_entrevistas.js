@@ -298,7 +298,7 @@ const COMPANIES = [
       futuro: 'Etiquetas ultra-finas com chip multi-operadora e Wi-Fi para localização de precisão dentro de galpões.',
     } },
 
-  { n: 10, slug: 't4s-tecnologia', name: 'T4S Tecnologia', photo: null,
+  { n: 10, slug: 't4s-tecnologia', name: 'T4S Tecnologia', photo: 't4s-tecnologia.png',
     kicker: 'Um imobilizador que ninguém desarma em segundos',
     title: 'Mesh entre 42 mil caminhões contra roubo de carga',
     byline: null,
@@ -320,7 +320,7 @@ const COMPANIES = [
       futuro: 'Monitoramento volumétrico do baú e checagem biométrica facial contínua em bancos de dados externos.',
     } },
 
-  { n: 11, slug: 'netfleet-driver-serie-a', name: 'Netfleet / Driver Série A', photo: null,
+  { n: 11, slug: 'netfleet-driver-serie-a', name: 'Netfleet / Driver Série A', photo: 'netfleet-driver-serie-a.png',
     kicker: 'Telemetria sem instalar nada',
     title: 'Só com o celular do motorista',
     byline: null,
