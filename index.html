@@ -10,29 +10,38 @@
 <helmet>
 <link rel="preconnect" href="https://api.fontshare.com">
 <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700,800,900&display=swap">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Spectral:ital,wght@0,200;0,300;0,400;1,200;1,300&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="assets/site.css">
 <style>
 html,body{background:#04060f}
-.home-section{padding:clamp(64px,10vh,120px) 0}
-.home-eyebrow{display:inline-block;margin:0 0 14px;font:600 11px/1 'Switzer',sans-serif;letter-spacing:.28em;text-transform:uppercase;color:#5ee7ff}
-.home-section h2{margin:0;font:800 clamp(28px,4.4vw,46px)/1.1 'Switzer',sans-serif;letter-spacing:-.02em;color:#fff}
-.home-section .lede{margin:16px 0 0;max-width:62ch;font:400 clamp(15px,1.3vw,18px)/1.65 'Switzer',sans-serif;color:rgba(206,220,255,.78)}
-.evento-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:32px}
-.evento-stats .stat{padding:18px;border-radius:14px;background:rgba(20,30,70,.09);border:1px solid rgba(170,196,255,.16)}
-.evento-stats .stat .v{font:800 26px/1 'Switzer',sans-serif;color:#fff}
-.evento-stats .stat .l{margin-top:6px;font:400 12px/1.4 'Switzer',sans-serif;color:rgba(206,220,255,.7)}
-.feature-card{display:flex;flex-wrap:wrap;gap:28px;align-items:center;margin-top:36px;padding:clamp(24px,3.4vw,40px);border-radius:20px;background:linear-gradient(155deg,rgba(20,30,70,.12),rgba(6,10,30,.08));border:1px solid rgba(170,196,255,.16)}
+.home-section{padding:clamp(56px,9vh,104px) 0;background:#F2EEE6}
+.home-section.dark{background:#101826;border-top:1px solid #22344C;border-bottom:1px solid #22344C}
+.home-section .wrap{max-width:1180px;margin:0 auto;padding:0 clamp(20px,5vw,72px)}
+.home-eyebrow{display:flex;align-items:center;gap:14px;margin:0 0 16px;font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:#6B6559}
+.home-eyebrow::before{content:'';width:26px;height:1px;background:#4FD1E8;flex:none}
+.home-section.dark .home-eyebrow{color:#93A3B8}
+.home-section h2{margin:0;font-family:'Sora',sans-serif;font-weight:700;font-size:clamp(26px,4vw,42px);line-height:1.1;letter-spacing:-.025em;color:#14161A}
+.home-section.dark h2{color:#F2EEE6}
+.home-section .lede{margin:16px 0 0;max-width:62ch;font-family:'Spectral',Georgia,serif;font-weight:300;font-size:clamp(15px,1.3vw,18px);line-height:1.65;color:#4A4842}
+.home-section.dark .lede{color:#D8CFC2}
+.evento-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:#DCD6C9;border:1px solid #DCD6C9;margin-top:32px}
+.evento-stats .stat{padding:20px;background:#F2EEE6}
+.evento-stats .stat .v{font-family:'Sora',sans-serif;font-weight:700;font-size:26px;color:#14161A}
+.evento-stats .stat .l{margin-top:6px;font-family:'Spectral',Georgia,serif;font-weight:300;font-size:12.5px;color:#4A4842}
+.feature-card{display:flex;flex-wrap:wrap;gap:28px;align-items:center;margin-top:32px;padding:clamp(24px,3.4vw,40px);border:1px solid #22344C;background:#16202f}
 .feature-card .txt{flex:1;min-width:260px}
-.feature-card h3{margin:0 0 10px;font:700 clamp(20px,2.4vw,28px)/1.25 'Switzer',sans-serif;color:#fff}
-.feature-card p{margin:0 0 20px;font:400 15px/1.6 'Switzer',sans-serif;color:rgba(206,220,255,.78)}
-.feature-card .cta{display:inline-flex;align-items:center;gap:10px;font:600 12px/1 'Switzer',sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#5ee7ff}
-.mini-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px;margin-top:36px}
-.mini-card{padding:18px;border-radius:14px;background:rgba(20,30,70,.09);border:1px solid rgba(170,196,255,.16);transition:border-color .3s ease,transform .3s ease}
-.mini-card:hover{border-color:rgba(170,196,255,.32);transform:translateY(-2px)}
-.mini-card .num{font:600 10px/1 'Switzer',sans-serif;letter-spacing:.14em;color:#5ee7ff}
-.mini-card h4{margin:10px 0 0;font:700 14px/1.3 'Switzer',sans-serif;color:#fff}
-.section-foot{margin-top:32px}
-.section-foot a{font:600 12px/1 'Switzer',sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#5ee7ff}
+.feature-card h3{margin:0 0 10px;font-family:'Sora',sans-serif;font-weight:600;font-size:clamp(19px,2.2vw,26px);line-height:1.28;letter-spacing:-.02em;color:#F2EEE6}
+.feature-card p{margin:0 0 20px;font-family:'Spectral',Georgia,serif;font-weight:300;font-size:15.5px;line-height:1.6;color:#D8CFC2}
+.feature-card .cta{display:inline-flex;align-items:center;gap:10px;font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#4FD1E8}
+.mini-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1px;background:#DCD6C9;border:1px solid #DCD6C9;margin-top:32px}
+.mini-card{padding:18px 20px;background:#F2EEE6;transition:background .3s ease}
+.mini-card:hover{background:#EDE8DE}
+.mini-card .num{font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:10px;letter-spacing:.14em;color:#1F6F7D}
+.mini-card h4{margin:10px 0 0;font-family:'Sora',sans-serif;font-weight:600;font-size:14.5px;color:#14161A}
+.section-foot{margin-top:28px}
+.section-foot a{font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#1F6F7D}
+.home-section.dark .section-foot a{color:#4FD1E8}
 </style>
 <style>
 html,body{margin:0;padding:0;background:#04060f;color:#e8eeff;font-family:'Switzer',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
@@ -397,7 +406,7 @@ body[data-density="Mínima"] [data-tier="3"],body[data-density="Mínima"] [data-
 
       </section>
 
-  <section id="evento" class="home-section" style="background:#04060f">
+  <section id="evento" class="home-section">
     <div class="wrap">
       <span class="home-eyebrow">O evento</span>
       <h2>Logística do Futuro</h2>
@@ -410,7 +419,7 @@ body[data-density="Mínima"] [data-tier="3"],body[data-density="Mínima"] [data-
     </div>
   </section>
 
-  <section class="home-section" style="background:#070a18;border-top:1px solid rgba(170,196,255,.14);border-bottom:1px solid rgba(170,196,255,.14)">
+  <section class="home-section dark">
     <div class="wrap">
       <span class="home-eyebrow">Painel Apisul & Atvos</span>
       <h2>A tecnologia é a tinta da parede</h2>
@@ -424,7 +433,7 @@ body[data-density="Mínima"] [data-tier="3"],body[data-density="Mínima"] [data-
     </div>
   </section>
 
-  <section class="home-section" style="background:#04060f">
+  <section class="home-section">
     <div class="wrap">
       <span class="home-eyebrow">13 empresas, 13 abordagens</span>
       <h2>Entrevistas</h2>
@@ -443,7 +452,7 @@ body[data-density="Mínima"] [data-tier="3"],body[data-density="Mínima"] [data-
     </div>
   </section>
 
-  <section class="home-section" style="background:#070a18;border-top:1px solid rgba(170,196,255,.14)">
+  <section class="home-section dark">
     <div class="wrap">
       <span class="home-eyebrow">Registro em vídeo</span>
       <h2>Vídeos</h2>

@@ -400,8 +400,8 @@ function pageHtml(c, prevC, nextC) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${c.name} — Logística do Futuro</title>
 <meta name="description" content="${c.dek}">
-<link rel="preconnect" href="https://api.fontshare.com">
-<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700,800,900&display=swap">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Spectral:ital,wght@0,200;0,300;0,400;1,200;1,300&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
 <body>
@@ -446,20 +446,20 @@ ${FOOTER}
 }
 
 function hubHtml() {
-  const cards = COMPANIES.map(c => {
+  const items = COMPANIES.map(c => {
     const thumb = c.photo
-      ? `<img class="thumb" src="fotos/${c.photo}" alt="${c.name}">`
+      ? `<div class="thumb"><img src="fotos/${c.photo}" alt="${c.name}"></div>`
       : `<div class="thumb placeholder">${c.name[0]}</div>`;
     const num = String(c.n).padStart(2, '0');
-    return `      <a class="card" href="${c.slug}.html">
+    return `      <div class="item">
+        <span class="num">${num}</span>
         ${thumb}
-        <div class="body">
-          <span class="num">${num} / 13</span>
+        <a class="lk" href="${c.slug}.html">
           <h3>${c.name}</h3>
-          <p class="dek">${c.kicker}</p>
-          <span class="tag">Ler entrevista →</span>
-        </div>
-      </a>`;
+          <p class="dek">${c.kicker} — ${c.title}</p>
+          <span class="more">Ler entrevista →</span>
+        </a>
+      </div>`;
   }).join('\n');
 
   return `<!DOCTYPE html>
@@ -469,8 +469,8 @@ function hubHtml() {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Entrevistas — Logística do Futuro</title>
 <meta name="description" content="13 empresas, 13 abordagens diferentes para o mesmo problema: segurança, rastreamento e inteligência no transporte de cargas.">
-<link rel="preconnect" href="https://api.fontshare.com">
-<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700,800,900&display=swap">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Spectral:ital,wght@0,200;0,300;0,400;1,200;1,300&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
 <body>
@@ -485,8 +485,8 @@ ${NAV}
 </header>
 
 <main class="wrap">
-  <div class="grid">
-${cards}
+  <div class="prog">
+${items}
   </div>
 </main>
 
