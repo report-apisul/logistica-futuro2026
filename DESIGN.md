@@ -55,12 +55,12 @@ spacing:
   max-width: "1180px"
 components:
   nav-pill:
-    backgroundColor: "rgba(16,24,38,.92)"
+    backgroundColor: "linear-gradient(140deg, rgba(16,24,38,.62), rgba(16,24,38,.55))"
     textColor: "{colors.paper-cream}"
     rounded: "{rounded.pill}"
     padding: "9px 10px 9px 22px"
   nav-pill-compact:
-    backgroundColor: "rgba(16,24,38,.92)"
+    backgroundColor: "linear-gradient(140deg, rgba(16,24,38,.62), rgba(16,24,38,.55))"
     textColor: "{colors.paper-cream}"
     rounded: "{rounded.pill}"
   item-row:
@@ -169,7 +169,7 @@ Two corner languages coexist on purpose. The shared nav and anything explicitly 
 Character in one phrase: **restrained and confident** — thin hairline borders, weighty Sora headings, and almost no ornament; the type and the whitespace carry the authority, not decoration.
 
 ### Navigation
-The one component shared verbatim between the Hero and the report world: a floating glass pill (`position: fixed`, `top: 14px`, `border-radius: 999px`, `background: rgba(16,24,38,.92)` — the same flat navy tone as Precarga 2026's own nav, not a gradient — `backdrop-filter: blur(18px) saturate(1.4)`, 1px `rgba(170,196,255,.16)` border). Brand mark left (Sora 600, uppercase, `.2em` tracking), center links (Mono, uppercase, `rgba(214,226,255,.78)` at rest → white on hover → cyan when active, sliding underline), and a bordered CTA pill on the right with a circular arrow badge. On scroll past 40px it animates its own `top` from 14px down to 4px (see `assets/nav-scroll.js`) and grows a slightly heavier shadow — physically "docking" closer to the viewport edge to give reading more room — then eases back to 14px when the page returns to the top. Below 760px the center links hide entirely; only brand + CTA remain, at reduced padding so the pill never overflows small viewports.
+The one component shared verbatim between the Hero and the report world: a floating glass pill (`position: fixed`, `top: 14px`, `border-radius: 999px`, `background: linear-gradient(140deg, rgba(16,24,38,.62), rgba(16,24,38,.55))` — Precarga 2026's navy hue, kept at the Hero's original translucency rather than Precarga's more opaque nav — `backdrop-filter: blur(18px) saturate(1.1)`, 1px `rgba(170,196,255,.16)` border). Brand mark left (Sora 600, uppercase, `.2em` tracking), center links (Mono, uppercase, `rgba(214,226,255,.78)` at rest → white on hover → cyan when active, sliding underline), and a bordered CTA pill on the right with a circular arrow badge. On scroll past 40px it animates its own `top` from 14px down to 4px (see `assets/nav-scroll.js`) and grows a slightly heavier shadow — physically "docking" closer to the viewport edge to give reading more room — then eases back to 14px when the page returns to the top. Below 760px the center links hide entirely; only brand + CTA remain, at reduced padding so the pill never overflows small viewports.
 
 ### Cards / List Rows
 - **Corner Style:** effectively square; only the embedded photo/video thumbnail carries `12px` radius.
