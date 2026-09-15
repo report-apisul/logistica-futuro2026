@@ -23,18 +23,24 @@
 <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=switzer@500,600&display=swap">
 <link rel="stylesheet" href="assets/site.css">
 <style>
-  .page-head{position:relative;overflow:hidden}
+  .page-head{padding:0;border-bottom:none;overflow:visible}
+  .filmstrip-bg{overflow:hidden}
+  .scrub-wrap{position:relative;height:380vh}
+  .scrub-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;align-items:center}
   .filmstrip-bg{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none}
-  .filmstrip-bg .track{position:absolute;top:50%;left:0;display:flex;transform:translateY(-50%);animation:filmstrip-roll 70s linear infinite;will-change:transform}
-  .filmstrip-bg .track img{height:220px;width:auto;display:block;flex:none}
+  .filmstrip-bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55;transition:opacity .5s ease}
   .filmstrip-bg::after{content:'';position:absolute;inset:0;background:
-    linear-gradient(180deg,rgba(16,24,38,.94) 0%,rgba(16,24,38,.7) 30%,rgba(16,24,38,.55) 55%,rgba(16,24,38,.86) 80%,#101826 100%),
-    linear-gradient(90deg,#101826 0%,rgba(16,24,38,.55) 18%,rgba(16,24,38,.35) 50%,rgba(16,24,38,.55) 82%,#101826 100%);
+    linear-gradient(180deg,rgba(16,24,38,.9) 0%,rgba(16,24,38,.62) 30%,rgba(16,24,38,.5) 55%,rgba(16,24,38,.82) 80%,#101826 100%),
+    linear-gradient(90deg,#101826 0%,rgba(16,24,38,.5) 18%,rgba(16,24,38,.3) 50%,rgba(16,24,38,.5) 82%,#101826 100%);
+    transition:background .6s ease;
   }
-  @keyframes filmstrip-roll{from{transform:translateY(-50%) translateX(0)}to{transform:translateY(-50%) translateX(-50%)}}
-  .page-head .wrap{position:relative;z-index:1}
-  @media (prefers-reduced-motion:reduce){.filmstrip-bg .track{animation:none}}
-  @media (max-width:640px){.filmstrip-bg .track img{height:150px}}
+  .scrub-wrap.is-ending .filmstrip-bg::after{background:
+    linear-gradient(180deg,rgba(16,24,38,.97) 0%,rgba(16,24,38,.88) 30%,rgba(16,24,38,.82) 55%,rgba(16,24,38,.95) 80%,#101826 100%),
+    linear-gradient(90deg,#101826 0%,rgba(16,24,38,.8) 18%,rgba(16,24,38,.7) 50%,rgba(16,24,38,.8) 82%,#101826 100%);
+  }
+  .scrub-wrap.is-ending .filmstrip-bg img{opacity:.3}
+  .scrub-pin .wrap{position:relative;z-index:1;width:100%;padding:calc(clamp(48px,9vh,96px) + 46px) var(--pad) clamp(40px,7vh,72px)}
+  @media (max-width:640px){.scrub-wrap{height:260vh}}
 
   .video-cta{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin:28px 0 0;padding:18px 22px;border:1px solid var(--line-dark);background:rgba(79,209,232,.06)}
   .video-cta p{margin:0;font-weight:300;font-size:14px;line-height:1.5;color:var(--steel);flex:1}
@@ -95,29 +101,69 @@
 </nav>
 
 <header class="page-head">
-  <div class="filmstrip-bg">
-    <div class="track">
-      <img src="assets/palestra-filmstrip.jpg" alt="">
-      <img src="assets/palestra-filmstrip.jpg" alt="">
+<div class="scrub-wrap" id="scrubWrap">
+  <div class="scrub-pin">
+    <div class="filmstrip-bg">
+      <img id="scrubFrame" src="assets/palestra-frames/f001.jpg" alt="">
+    </div>
+    <div class="wrap">
+      <span class="eyebrow">Palestra Apisul & Atvos</span>
+      <h1>A tecnologia é a tinta da parede</h1>
+      <p class="lede">O que muda quando o gerenciamento de risco olha para o acidente, não só para o roubo. Inteligência Artificial, Torres Conectadas e o Fator Humano, no palco do Logística do Futuro.</p>
+
+      <div class="video-cta">
+        <p>Veja trechos em vídeo dessa palestra e o making of da cobertura completa.</p>
+        <a href="videos.html">Assistir aos vídeos →</a>
+      </div>
+
+      <div class="speakers-row">
+        <div class="sp"><img src="uploads/palestrantes/marco-aurelio-badim.png" alt="Marco Aurélio Badim"><div><div class="nm">Marco Aurélio Badim</div><div class="rl">Abertura institucional, Grupo Apisul</div></div></div>
+        <div class="sp"><img src="uploads/palestrantes/daniel-nobre.png" alt="Daniel Nobre"><div><div class="nm">Daniel Nobre</div><div class="rl">Superintendente de Produtos Digitais e Tecnologia, Apisul</div></div></div>
+        <div class="sp"><img src="uploads/palestrantes/daniel-cunha.png" alt="Daniel Cunha"><div><div class="nm">Daniel Cunha</div><div class="rl">Logística, Atvos</div></div></div>
+      </div>
     </div>
   </div>
-  <div class="wrap">
-    <span class="eyebrow">Palestra Apisul & Atvos</span>
-    <h1>A tecnologia é a tinta da parede</h1>
-    <p class="lede">O que muda quando o gerenciamento de risco olha para o acidente, não só para o roubo. Inteligência Artificial, Torres Conectadas e o Fator Humano, no palco do Logística do Futuro.</p>
-
-    <div class="video-cta">
-      <p>Veja trechos em vídeo dessa palestra e o making of da cobertura completa.</p>
-      <a href="videos.html">Assistir aos vídeos →</a>
-    </div>
-
-    <div class="speakers-row">
-      <div class="sp"><img src="uploads/palestrantes/marco-aurelio-badim.png" alt="Marco Aurélio Badim"><div><div class="nm">Marco Aurélio Badim</div><div class="rl">Abertura institucional, Grupo Apisul</div></div></div>
-      <div class="sp"><img src="uploads/palestrantes/daniel-nobre.png" alt="Daniel Nobre"><div><div class="nm">Daniel Nobre</div><div class="rl">Superintendente de Produtos Digitais e Tecnologia, Apisul</div></div></div>
-      <div class="sp"><img src="uploads/palestrantes/daniel-cunha.png" alt="Daniel Cunha"><div><div class="nm">Daniel Cunha</div><div class="rl">Logística, Atvos</div></div></div>
-    </div>
-  </div>
+</div>
 </header>
+<script>
+(function(){
+  var N = 41;
+  var wrap = document.getElementById('scrubWrap');
+  var frame = document.getElementById('scrubFrame');
+  if (!wrap || !frame) return;
+  var base = 'assets/palestra-frames/f';
+  var cache = [];
+  for (var i = 1; i <= N; i++){
+    var num = String(i).padStart(3,'0');
+    var img = new Image();
+    img.src = base + num + '.jpg';
+    cache[i] = img.src;
+  }
+  var lastIdx = 1;
+  var ticking = false;
+  function update(){
+    ticking = false;
+    var rect = wrap.getBoundingClientRect();
+    var scrollable = wrap.offsetHeight - window.innerHeight;
+    var progress = scrollable > 0 ? Math.min(1, Math.max(0, -rect.top / scrollable)) : 0;
+    var idx = Math.min(N, Math.max(1, Math.round(progress * (N - 1)) + 1));
+    if (idx !== lastIdx){
+      frame.src = cache[idx];
+      lastIdx = idx;
+    }
+    wrap.classList.toggle('is-ending', progress > 0.92);
+  }
+  function onScroll(){
+    if (!ticking){
+      ticking = true;
+      window.requestAnimationFrame ? requestAnimationFrame(update) : setTimeout(update, 16);
+    }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', update);
+  update();
+})();
+</script>
 
 <main class="wrap">
   <article class="article" style="max-width:760px">
