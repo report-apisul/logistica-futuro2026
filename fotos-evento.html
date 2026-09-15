@@ -62,9 +62,6 @@
   .g3d-loading.is-hidden{opacity:0;pointer-events:none}
   .g3d-title{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 20px;pointer-events:none;mix-blend-mode:exclusion;color:#fff;z-index:2}
   .g3d-title h2{margin:0;font-family:'Spectral',Georgia,serif;font-weight:300;font-style:italic;font-size:clamp(30px,6vw,70px);letter-spacing:-.01em}
-  .g3d-hint{position:absolute;left:0;right:0;bottom:22px;text-align:center;font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#8C9AB0;z-index:2;pointer-events:none}
-  .g3d-hint p{margin:0 0 4px}
-  .g3d-hint p:last-child{margin:0;opacity:.55}
   @media (prefers-reduced-motion:reduce){.g3d-section{display:none}}
 </style>
 </head>
@@ -97,10 +94,6 @@
   <div id="gallery3d" class="is-loading"></div>
   <div class="g3d-loading" id="g3dLoading">Carregando galeria…</div>
   <div class="g3d-title" id="g3dTitle"><h2><span style="font-style:normal;font-family:'Sora',sans-serif;font-weight:300">Fotos do</span> <em>evento</em></h2></div>
-  <div class="g3d-hint">
-    <p>Use a roda do mouse, as setas do teclado ou o toque para navegar</p>
-    <p>A reprodução automática retoma após 3 segundos de inatividade</p>
-  </div>
 </section>
 
 <main class="gallery-wrap" id="fallbackGallery" hidden>
