@@ -53,6 +53,19 @@
   .lb-next{right:16px}
   @media (max-width:640px){.lb-prev,.lb-next{width:40px;height:40px}.lb-prev{left:8px}.lb-next{right:8px}}
   .lb-count{position:absolute;bottom:16px;left:0;right:0;text-align:center;font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:10.5px;letter-spacing:.16em;color:#7C8AA0}
+
+  .g3d-section{position:relative;height:100vh;min-height:520px;background:#0B1220;overflow:hidden}
+  #gallery3d{position:absolute;inset:0;cursor:grab}
+  #gallery3d.is-loading{opacity:0}
+  #gallery3d canvas{display:block;touch-action:none}
+  .g3d-loading{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:#7C8AA0;transition:opacity .4s ease}
+  .g3d-loading.is-hidden{opacity:0;pointer-events:none}
+  .g3d-title{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 20px;pointer-events:none;mix-blend-mode:exclusion;color:#fff;z-index:2}
+  .g3d-title h2{margin:0;font-family:'Spectral',Georgia,serif;font-weight:300;font-style:italic;font-size:clamp(30px,6vw,70px);letter-spacing:-.01em}
+  .g3d-hint{position:absolute;left:0;right:0;bottom:22px;text-align:center;font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#8C9AB0;z-index:2;pointer-events:none}
+  .g3d-hint p{margin:0 0 4px}
+  .g3d-hint p:last-child{margin:0;opacity:.55}
+  @media (prefers-reduced-motion:reduce){.g3d-section{display:none}}
 </style>
 </head>
 <body>
@@ -80,7 +93,17 @@
   </div>
 </header>
 
-<main class="gallery-wrap">
+<section class="g3d-section" id="g3dSection">
+  <div id="gallery3d" class="is-loading"></div>
+  <div class="g3d-loading" id="g3dLoading">Carregando galeria…</div>
+  <div class="g3d-title" id="g3dTitle"><h2><span style="font-style:normal;font-family:'Sora',sans-serif;font-weight:300">Fotos do</span> <em>evento</em></h2></div>
+  <div class="g3d-hint">
+    <p>Use a roda do mouse, as setas do teclado ou o toque para navegar</p>
+    <p>A reprodução automática retoma após 3 segundos de inatividade</p>
+  </div>
+</section>
+
+<main class="gallery-wrap" id="fallbackGallery" hidden>
   <div class="masonry" id="masonry">
     <a class="g-item" href="#" data-full="uploads/fotos-evento/palestra-principal.jpg" data-cap="Palestra principal"><img data-src="uploads/fotos-evento/palestra-principal.jpg" alt="Palestra principal"><span class="g-cap">Palestra principal</span></a>
     <a class="g-item" href="#" data-full="uploads/fotos-evento/drone.jpg" data-cap="Vista aérea do evento"><img data-src="uploads/fotos-evento/drone.jpg" alt="Vista aérea do evento"><span class="g-cap">Vista aérea</span></a>
@@ -117,6 +140,8 @@
 </footer>
 <script src="assets/nav-scroll.js"></script>
 <script src="assets/reveal.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.139.2/three.min.js"></script>
+<script src="assets/gallery3d.js"></script>
 <script>
 (function(){
   var items = Array.prototype.slice.call(document.querySelectorAll('.g-item'));
