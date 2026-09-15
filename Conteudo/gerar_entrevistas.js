@@ -259,7 +259,7 @@ const COMPANIES = [
       futuro: 'Análise comportamental contínua por IA e liberação automatizada de travas via API com parceiros de gerenciamento de risco.',
     } },
 
-  { n: 8, slug: 'jomed', name: 'Jomed Transportadora', photo: null,
+  { n: 8, slug: 'jomed', name: 'Jomed Transportadora', photo: 'jomed.png',
     kicker: 'Frota nova, biometano e um prêmio de peso',
     title: 'Como reter motorista num mercado em escassez',
     byline: null,
