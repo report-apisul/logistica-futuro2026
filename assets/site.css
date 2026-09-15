@@ -272,6 +272,7 @@ main.wrap { padding-top: clamp(48px, 8vh, 88px); padding-bottom: clamp(40px, 7vh
 .stats-block .sec-sub { margin: -14px 0 20px; font-weight: 300; font-size: 14px; color: var(--body); }
 .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
 .stat { background: var(--cream); padding: 22px 20px; }
+a.stat { display: block; text-decoration: none; cursor: pointer; }
 .stat .v { font-family: 'Sora', sans-serif; font-weight: 700; font-size: 30px; letter-spacing: -.02em; color: var(--ink); }
 .stat .l { margin-top: 8px; font-weight: 300; font-size: 13px; line-height: 1.4; color: var(--body); }
 .stats.b .v { color: var(--teal); }
