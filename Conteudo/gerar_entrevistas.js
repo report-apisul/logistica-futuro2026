@@ -12,6 +12,7 @@ const NAV = `<nav class="site-nav">
     <a href="../palestra.html">Palestra</a>
     <a href="../entrevistas/index.html" class="active">Entrevistas</a>
     <a href="../videos.html">Vídeos</a>
+    <a href="../fotos-evento.html">Fotos</a>
   </div>
   <label for="navToggle" class="nav-toggle-btn" aria-label="Abrir menu">
     <span class="bars"><span></span><span></span><span></span></span>
