@@ -26,7 +26,7 @@
 <link rel="stylesheet" href="assets/site.css">
 <style>
   .vlist{max-width:var(--max);margin:0 auto;border-top:1px solid var(--ink)}
-  .vitem{display:grid;grid-template-columns:220px minmax(0,1fr);gap:clamp(20px,3vw,36px);align-items:start;padding:clamp(24px,4vh,36px) 0;border-bottom:1px solid var(--rule)}
+  .vitem{display:grid;grid-template-columns:286px minmax(0,1fr);gap:clamp(20px,3vw,36px);align-items:start;padding:clamp(24px,4vh,36px) 0;border-bottom:1px solid var(--rule)}
   @media (max-width:680px){.vitem{grid-template-columns:1fr}}
   .vitem .frame{position:relative;aspect-ratio:16/9;background:var(--dark);display:flex;align-items:center;justify-content:center;border:1px solid var(--line-dark);border-radius:12px;overflow:hidden}
   .vitem .frame video,.vitem .frame img{width:100%;height:100%;object-fit:cover}
@@ -299,5 +299,17 @@
 </footer>
 <script src="assets/nav-scroll.js"></script>
 <script src="assets/reveal.js"></script>
+<script>
+(function(){
+  var videos = Array.prototype.slice.call(document.querySelectorAll('.vlist video'));
+  videos.forEach(function(v){
+    v.addEventListener('play', function(){
+      videos.forEach(function(other){
+        if (other !== v && !other.paused) other.pause();
+      });
+    });
+  });
+})();
+</script>
 </body>
 </html>
