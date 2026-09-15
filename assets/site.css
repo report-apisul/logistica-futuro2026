@@ -141,6 +141,12 @@ img { max-width: 100%; display: block; }
   }
   .site-nav .links a:last-child { border-bottom: 0; }
 }
+@media (max-width: 400px) {
+  .site-nav { padding: 6px 6px 6px 14px; gap: 8px; }
+  .site-nav .brand { font-size: 10px; }
+  .site-nav .cta { font-size: 0; padding: 6px; gap: 0; }
+  .site-nav .cta::after { font-size: 11px; width: 28px; height: 28px; }
+}
 @media (prefers-reduced-motion: reduce) {
   .site-nav .links, .nav-toggle-btn .bars span { transition: none !important; }
 }
