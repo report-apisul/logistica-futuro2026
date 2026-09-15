@@ -410,12 +410,14 @@ function pageHtml(c, prevC, nextC) {
 <meta property="og:title" content="${c.name} · Logística do Futuro">
 <meta property="og:description" content="${c.dek}">
 <meta property="og:url" content="https://report-apisul.github.io/logistica-futuro2026/entrevistas/${c.slug}.html">
-<meta property="og:image" content="https://report-apisul.github.io/logistica-futuro2026/${c.photo ? 'entrevistas/fotos/' + c.photo : 'assets/og-image.jpg'}">
+<meta property="og:image" content="https://report-apisul.github.io/logistica-futuro2026/${c.photo ? 'entrevistas/fotos/og/' + c.slug + '.jpg' : 'assets/og-image.jpg'}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:locale" content="pt_BR">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${c.name} · Logística do Futuro">
 <meta name="twitter:description" content="${c.dek}">
-<meta name="twitter:image" content="https://report-apisul.github.io/logistica-futuro2026/${c.photo ? 'entrevistas/fotos/' + c.photo : 'assets/og-image.jpg'}">
+<meta name="twitter:image" content="https://report-apisul.github.io/logistica-futuro2026/${c.photo ? 'entrevistas/fotos/og/' + c.slug + '.jpg' : 'assets/og-image.jpg'}">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Spectral:ital,wght@0,200;0,300;0,400;1,200;1,300&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <link rel="preconnect" href="https://api.fontshare.com">
