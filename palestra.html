@@ -25,7 +25,7 @@
 <style>
   .page-head{padding:0;border-bottom:none;overflow:visible}
   .filmstrip-bg{overflow:hidden}
-  .scrub-wrap{position:relative;height:380vh}
+  .scrub-wrap{position:relative;height:160vh}
   .scrub-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;align-items:center}
   .filmstrip-bg{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none}
   .filmstrip-bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55;transition:opacity .5s ease}
@@ -40,7 +40,7 @@
   }
   .scrub-wrap.is-ending .filmstrip-bg img{opacity:.3}
   .scrub-pin .wrap{position:relative;z-index:1;width:100%;padding:calc(clamp(48px,9vh,96px) + 46px) var(--pad) clamp(40px,7vh,72px)}
-  @media (max-width:640px){.scrub-wrap{height:260vh}}
+  @media (max-width:640px){.scrub-wrap{height:130vh}}
 
   .video-cta{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin:28px 0 0;padding:18px 22px;border:1px solid var(--line-dark);background:rgba(79,209,232,.06)}
   .video-cta p{margin:0;font-weight:300;font-size:14px;line-height:1.5;color:var(--steel);flex:1}
