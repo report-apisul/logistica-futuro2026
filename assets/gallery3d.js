@@ -279,11 +279,11 @@
     var imageAdvance = totalImages > 0 ? (visibleCount % totalImages || totalImages) : 0;
     var halfRange = DEPTH_RANGE / 2;
 
-    var fadeIn = { start: 0.05, end: 0.25 };
-    var fadeOut = { start: 0.4, end: 0.43 };
+    var fadeIn = { start: 0.03, end: 0.14 };
+    var fadeOut = { start: 0.86, end: 0.97 };
     var blurIn = { start: 0.0, end: 0.1 };
-    var blurOut = { start: 0.4, end: 0.43 };
-    var maxBlur = 8.0;
+    var blurOut = { start: 0.9, end: 1.0 };
+    var maxBlur = 2.2;
 
     function animate() {
       requestAnimationFrame(animate);
