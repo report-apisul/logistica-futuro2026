@@ -124,7 +124,7 @@ const COMPANIES = [
       'Isso muda a lógica da apólice. Não é só pagar depois do prejuízo, é reduzir o prejuízo enquanto ele ainda está acontecendo.',
       '**Coberturas que nasceram de conversa, não de catálogo**',
       'A corretora criou três produtos que não existem no seguro tradicional:',
-      '- **Perda de frete**: protege o transportador quando a carga é danificada e o embarcador retém o pagamento por causa disso.\n- **Responsabilidade ambiental**: cobre vazamento de produtos químicos, combustíveis e cargas perigosas em rodovias ou mananciais.\n- **Variação de temperatura e quebra de máquina**: protege o transporte de congelados e refrigerados contra falha mecânica no motor do refrigerador da carreta.',
+      '- **Perda de frete**: protege o transportador quando a carga é danificada e o embarcador retém o pagamento por causa disso.\n- **Variação de temperatura e quebra de máquina**: protege o transporte de congelados e refrigerados contra falha mecânica no motor do refrigerador da carreta.',
       'Nenhuma dessas coberturas nasceu de planilha. Nasceu de cliente relatando um prejuízo que o seguro comum não cobria.',
       '**O papel da corretora não termina na venda**',
       '*"Nosso papel não é apenas vender uma apólice, mas estar presente no dia a dia da operação. Nós traduzimos o perfil de risco real do cliente para a seguradora, garantindo que ele tenha coberturas personalizadas para sazonalidades sem lacunas de proteção."*',
@@ -133,7 +133,7 @@ const COMPANIES = [
     raiox: {
       o_que_e: 'Corretora especializada em transporte e logística dentro do Grupo Apisul, com atuação consultiva junto a embarcadores e transportadores.',
       problema: 'Falta de cobertura adequada para riscos específicos do setor e lentidão no atendimento após o sinistro.',
-      inovacao: 'Coberturas criadas sob medida: perda de frete, responsabilidade ambiental e variação de temperatura com quebra de máquina.',
+      inovacao: 'Coberturas criadas sob medida: perda de frete e variação de temperatura com quebra de máquina.',
       futuro: 'Incentivos tarifários para frotas que adotam tecnologia de prevenção de acidentes e telemetria comportamental.',
     } },
 
