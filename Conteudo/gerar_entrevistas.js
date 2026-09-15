@@ -403,6 +403,7 @@ function pageHtml(c, prevC, nextC) {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${c.name} · Logística do Futuro</title>
+<link rel="icon" href="../assets/favicon.png" type="image/png">
 <meta name="description" content="${c.dek}">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Logística do Futuro">
@@ -487,6 +488,7 @@ function hubHtml() {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Entrevistas · Logística do Futuro</title>
+<link rel="icon" href="../assets/favicon.png" type="image/png">
 <meta name="description" content="13 empresas, 13 abordagens diferentes para o mesmo problema: segurança, rastreamento e inteligência no transporte de cargas.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Logística do Futuro">
