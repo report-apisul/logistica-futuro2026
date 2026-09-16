@@ -325,13 +325,13 @@ const COMPANIES = [
       futuro: 'Monitoramento volumétrico do baú e checagem biométrica facial contínua em bancos de dados externos.',
     } },
 
-  { n: 11, slug: 'netfleet-driver-serie-a', name: 'Netfleet / Driver Série A', photo: 'netfleet-driver-serie-a.png',
+  { n: 11, slug: 'netfleet-driver-serie-a', name: 'AIOTI', photo: 'netfleet-driver-serie-a.png',
     kicker: 'Telemetria sem instalar nada',
     title: 'Só com o celular do motorista',
     byline: null,
-    dek: 'O aplicativo é o sensor: acelerômetro e GPS do próprio smartphone viram telemetria comportamental, com ranking em vez de punição.',
+    dek: 'O aplicativo SafePilot é o sensor: acelerômetro e GPS do próprio smartphone viram telemetria comportamental, com ranking em vez de punição.',
     body: [
-      'A Netfleet resolve o problema de quem sempre ficou de fora da telemetria: o motorista autônomo, sem hardware fixo no veículo.',
+      'A AIOTI resolve o problema de quem sempre ficou de fora da telemetria: o motorista autônomo, sem hardware fixo no veículo. A solução se chama SafePilot.',
       '*"O nosso propósito é usar a tecnologia para salvar vidas, reduzindo acidentes de trânsito no transporte profissional de cargas. No Brasil, ocorrem cerca de 37 mil mortes por ano no trânsito e mais de cinco vezes esse número de pessoas com sequelas graves."*',
       '**O aplicativo é o sensor**',
       '*"Desenvolvemos um sistema de telemetria comportamental operado exclusivamente pelo smartphone do motorista via aplicativo, sem a necessidade de instalar nenhum tipo de hardware ou equipamento no veículo. O aplicativo utiliza os sensores de acelerômetro e GPS do celular para detectar excesso de velocidade, frenagens bruscas, acelerações severas, curvas acentuadas e manuseio do celular ao dirigir."*',
@@ -341,7 +341,7 @@ const COMPANIES = [
       '*"Ao longo de 32 semanas de acompanhamento via aplicativo, a curva de desempenho de todos os condutores participantes apresentou uma evolução expressiva na redução de infrações e manobras arriscadas."*',
     ],
     raiox: {
-      o_que_e: 'Plataforma de telemetria comportamental via aplicativo, sem necessidade de hardware instalado no veículo.',
+      o_que_e: 'SafePilot, plataforma de telemetria comportamental via aplicativo da AIOTI, sem necessidade de hardware instalado no veículo.',
       problema: 'Alto custo de instalação de telemetria tradicional e falta de monitoramento para motoristas autônomos e agregados.',
       inovacao: 'Uso dos sensores do próprio smartphone (GPS e acelerômetro) combinado a gamificação e ranking de desempenho.',
       futuro: 'Modelo White Label, integrando a telemetria comportamental a aplicativos de seguradoras e transportadoras.',
