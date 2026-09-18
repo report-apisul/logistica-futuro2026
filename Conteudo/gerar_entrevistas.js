@@ -123,7 +123,7 @@ const COMPANIES = [
       '*"Contamos com a estrutura própria da reguladora de sinistros Excel, cujas equipes prestam atendimento presencial imediato em acidentes para socorrer o motorista e conter o saque de mercadorias."*',
       'Isso muda a lógica da apólice. Não é só pagar depois do prejuízo, é reduzir o prejuízo enquanto ele ainda está acontecendo.',
       '**Coberturas que nasceram de conversa, não de catálogo**',
-      'A corretora criou três produtos que não existem no seguro tradicional:',
+      'A corretora criou dois produtos que não existem no seguro tradicional:',
       '- **Perda de frete**: protege o transportador quando a carga é danificada e o embarcador retém o pagamento por causa disso.\n- **Variação de temperatura e quebra de máquina**: protege o transporte de congelados e refrigerados contra falha mecânica no motor do refrigerador da carreta.',
       'Nenhuma dessas coberturas nasceu de planilha. Nasceu de cliente relatando um prejuízo que o seguro comum não cobria.',
       '**O papel da corretora não termina na venda**',
